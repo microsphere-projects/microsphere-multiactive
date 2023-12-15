@@ -76,6 +76,7 @@
             <artifactId>eureka-client</artifactId>
             <optional>true</optional>
         </dependency>
+
         <!-- Microsphere -->
         <dependency>
             <groupId>io.github.microsphere-projects</groupId>

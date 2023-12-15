@@ -47,6 +47,7 @@ public class ZoneInitializedListener extends OnceMainApplicationPreparedEventLis
 
     private void registerZoneLocator(BeanDefinitionRegistry registry, ConfigurableApplicationContext context) {
         List<ZoneLocator> zoneLocators = loadFactories(ZoneLocator.class, context);
+        // TODO plus Spring Bean as the members of CompositeZoneLocator
         CompositeZoneLocator compositeZoneLocator = new CompositeZoneLocator(zoneLocators);
         registerBeanInstance(ZONE_LOCATOR_BEAN_NAME, compositeZoneLocator, registry);
     }

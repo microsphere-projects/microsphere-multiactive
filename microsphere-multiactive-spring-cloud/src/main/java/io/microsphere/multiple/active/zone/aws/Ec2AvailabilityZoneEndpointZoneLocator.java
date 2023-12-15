@@ -1,5 +1,7 @@
-package io.microsphere.multiple.active.zone;
+package io.microsphere.multiple.active.zone.aws;
 
+import io.microsphere.multiple.active.zone.AbstractZoneLocator;
+import io.microsphere.multiple.active.zone.ZoneLocator;
 import org.springframework.core.env.Environment;
 import org.springframework.util.StringUtils;
 

@@ -6,7 +6,7 @@ io.microsphere.multiple.active.zone.ZoneInitializedListener,\
 io.microsphere.multiple.active.zone.ZoneDiscoveryListener
 
 io.microsphere.multiple.active.zone.ZoneLocator=\
-io.microsphere.multiple.active.zone.EcsContainerMetadataFileZoneLocator,\
-io.microsphere.multiple.active.zone.EcsTaskMetadataEndpointV4ZoneLocator,\
-io.microsphere.multiple.active.zone.Ec2AvailabilityZoneEndpointZoneLocator,\
+io.microsphere.multiple.active.zone.aws.EcsContainerMetadataFileZoneLocator,\
+io.microsphere.multiple.active.zone.aws.EcsTaskMetadataEndpointV4ZoneLocator,\
+io.microsphere.multiple.active.zone.aws.Ec2AvailabilityZoneEndpointZoneLocator,\
 io.microsphere.multiple.active.zone.DefaultZoneLocator

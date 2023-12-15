@@ -1,5 +1,9 @@
 package io.microsphere.multiple.active.zone;
 
+import io.microsphere.multiple.active.zone.aws.Ec2AvailabilityZoneEndpointZoneLocator;
+import io.microsphere.multiple.active.zone.aws.EcsContainerMetadataFileZoneLocator;
+import io.microsphere.multiple.active.zone.aws.EcsTaskMetadataEndpointV4ZoneLocator;
+
 import java.util.concurrent.TimeUnit;
 
 /**
