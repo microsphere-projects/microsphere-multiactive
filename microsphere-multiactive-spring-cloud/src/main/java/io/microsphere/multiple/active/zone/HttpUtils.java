@@ -15,7 +15,7 @@ import java.nio.charset.StandardCharsets;
 /**
  * The utilities class for simple http request.
  *
- * @author <a href="mailto:warlklown@gmail.com">Warlklown<a/>
+ * @author <a href="mailto:warlklown@gmail.com">Walklown<a/>
  * @since 1.0.0
  */
 public abstract class HttpUtils {
