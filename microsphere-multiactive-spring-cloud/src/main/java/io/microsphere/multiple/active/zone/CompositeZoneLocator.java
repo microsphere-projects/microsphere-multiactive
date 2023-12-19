@@ -15,23 +15,20 @@ import static io.microsphere.multiple.active.zone.ZoneConstants.DEFAULT_LOCATOR_
 import static io.microsphere.multiple.active.zone.ZoneConstants.LOCATOR_FAST_FAIL_PROPERTY_NAME;
 
 /**
- * The composite {@link ZoneLocator}
+ * The composition of {@link ZoneLocator} list.
  *
  * @author <a href="mailto:mercyblitz@gmail.com">Mercy<a/>
  * @since 1.0.0
  */
-public class CompositeZoneLocator extends AbstractZoneLocator {
+public class CompositeZoneLocator implements ZoneLocator {
 
     private static final Logger logger = LoggerFactory.getLogger(CompositeZoneLocator.class);
-
-    public static final int DEFAULT_ORDER = 0;
 
     private final List<ZoneLocator> zoneLocators;
 
     private volatile String zone;
 
     public CompositeZoneLocator(List<ZoneLocator> zoneLocators) {
-        super(DEFAULT_ORDER);
         Assert.notNull(zoneLocators, "The argument 'zoneLocators' must not be null!");
         this.zoneLocators = new ArrayList<>(zoneLocators);
         AnnotationAwareOrderComparator.sort(this.zoneLocators);
@@ -39,7 +36,13 @@ public class CompositeZoneLocator extends AbstractZoneLocator {
 
     @Override
     public boolean supports(Environment environment) {
-        return true;
+        // Supported when at least one object supports.
+        for (ZoneLocator zoneLocator : zoneLocators) {
+            if (zoneLocator.supports(environment)) {
+                return true;
+            }
+        }
+        return false;
     }
 
     @Override
@@ -86,7 +89,7 @@ public class CompositeZoneLocator extends AbstractZoneLocator {
         }
 
         if (zone == null) {
-            logger.warn("The zone can't be located by anyone of zoneLocators : ", zoneLocators);
+            logger.warn("The zone can't be located by anyone of zoneLocators : {}", zoneLocators);
         }
 
         this.zone = zone;
@@ -102,6 +105,6 @@ public class CompositeZoneLocator extends AbstractZoneLocator {
 
     @Override
     public String toString() {
-        return "CompositeZoneLocator{" + "beanName='" + beanName + '\'' + ", zoneLocators=" + zoneLocators + '}';
+        return "CompositeZoneLocator{" + "zoneLocators=" + zoneLocators + ", zone=" + zone + '}';
     }
 }
