@@ -2,11 +2,16 @@ package io.microsphere.multiple.active.zone.aws;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.microsphere.multiple.active.zone.AbstractZoneLocator;
+import io.microsphere.multiple.active.zone.HttpUtils;
 import io.microsphere.multiple.active.zone.ZoneLocator;
+import org.springframework.context.EnvironmentAware;
 import org.springframework.core.env.Environment;
 import org.springframework.util.StringUtils;
 
 import java.util.Map;
+
+import static io.microsphere.multiple.active.zone.ZoneConstants.DEFAULT_TIMEOUT;
+import static io.microsphere.multiple.active.zone.ZoneConstants.LOCATOR_TIMEOUT_PROPERTY_NAME;
 
 /**
  * The {@link ZoneLocator} based on <a href=
@@ -22,13 +27,15 @@ import java.util.Map;
  * @see ZoneLocator
  * @since 1.0.0
  */
-public class EcsTaskMetadataEndpointV4ZoneLocator extends AbstractZoneLocator {
+public class EcsTaskMetadataEndpointV4ZoneLocator extends AbstractZoneLocator implements EnvironmentAware {
 
     public static final String METADATA_URI_V4_ENV_NAME = "ECS_CONTAINER_METADATA_URI_V4";
 
     public static final int DEFAULT_ORDER = 10;
 
     private static final String ZONE_FIELD_NAME = "AvailabilityZone";
+
+    private int timeout = DEFAULT_TIMEOUT;
 
     public EcsTaskMetadataEndpointV4ZoneLocator() {
         super(DEFAULT_ORDER);
@@ -46,7 +53,7 @@ public class EcsTaskMetadataEndpointV4ZoneLocator extends AbstractZoneLocator {
         if (StringUtils.hasText(uri)) {
             String taskURL = uri + "/task";
             try {
-                String json = doGet(taskURL);
+                String json = HttpUtils.doGet(taskURL, timeout);
                 ObjectMapper objectMapper = new ObjectMapper();
                 Map metadata = objectMapper.readValue(json, Map.class);
                 Object zoneValue = metadata.get(ZONE_FIELD_NAME);
@@ -61,5 +68,10 @@ public class EcsTaskMetadataEndpointV4ZoneLocator extends AbstractZoneLocator {
                     METADATA_URI_V4_ENV_NAME);
         }
         return zone;
+    }
+
+    @Override
+    public void setEnvironment(Environment environment) {
+        this.timeout = environment.getProperty(LOCATOR_TIMEOUT_PROPERTY_NAME, int.class, DEFAULT_TIMEOUT);
     }
 }

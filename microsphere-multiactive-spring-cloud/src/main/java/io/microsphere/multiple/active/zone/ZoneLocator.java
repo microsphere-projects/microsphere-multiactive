@@ -1,6 +1,5 @@
 package io.microsphere.multiple.active.zone;
 
-import org.springframework.core.Ordered;
 import org.springframework.core.env.Environment;
 
 /**
@@ -9,7 +8,7 @@ import org.springframework.core.env.Environment;
  * @author <a href="mailto:mercyblitz@gmail.com">Mercy<a/>
  * @since 1.0.0
  */
-public interface ZoneLocator extends Ordered {
+public interface ZoneLocator {
 
     /**
      * Current {@link ZoneLocator} supports or not ?
