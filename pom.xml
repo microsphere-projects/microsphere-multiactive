@@ -47,6 +47,7 @@
         <module>microsphere-multiactive-dependencies</module>
         <module>microsphere-multiactive-commons</module>
         <module>microsphere-multiactive-spring-cloud</module>
+        <module>microsphere-multiactive-spring-cloud-netflix</module>
     </modules>
 
     <distributionManagement>

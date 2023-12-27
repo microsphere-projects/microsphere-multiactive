@@ -9,11 +9,16 @@ import static io.microsphere.multiple.active.zone.ZoneConstants.ZONE_PROPERTY_NA
 
 /**
  * {@link ZoneResolver} for Spring cloud {@link ServiceInstance}
- * 
+ *
  * @author <a href="mailto:mercyblitz@gmail.com">Mercy<a/>
  * @since 1.0.0
  */
 public class CloudServerZoneResolver implements ZoneResolver<ServiceInstance> {
+
+    /**
+     * Singleton {@link CloudServerZoneResolver}
+     */
+    public static final CloudServerZoneResolver INSTANCE = new CloudServerZoneResolver();
 
     @Override
     public String resolve(ServiceInstance serviceInstance) {
