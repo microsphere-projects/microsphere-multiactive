@@ -14,10 +14,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.microsphere.multiple.active.zone.ribbon;
+package io.microsphere.multiple.active.zone.spring.cloud.netflix.ribbon;
 
 import com.netflix.loadbalancer.ServerList;
-import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 
 import java.util.List;

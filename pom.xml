@@ -48,6 +48,7 @@
         <module>microsphere-multiactive-commons</module>
         <module>microsphere-multiactive-spring-cloud</module>
         <module>microsphere-multiactive-spring-cloud-netflix</module>
+        <module>microsphere-multiactive-spring-cloud-loadbalancer</module>
     </modules>
 
     <distributionManagement>
