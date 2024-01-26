@@ -23,6 +23,8 @@
         <microsphere-spring.version>${revision}</microsphere-spring.version>
         <microsphere-spring-boot.version>${revision}</microsphere-spring-boot.version>
         <microsphere-spring-cloud.version>${revision}</microsphere-spring-cloud.version>
+<!--        <dubbo.version>3.2.5</dubbo.version>-->
+        <dubbo.version>2.7.8</dubbo.version>
         <!-- BOM versions -->
         <spring-boot.version>2.7.18</spring-boot.version>
         <spring-cloud.version>3.1.6</spring-cloud.version>
@@ -126,6 +128,19 @@
                 <version>${microsphere.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+
+            <!-- Apache Dubbo -->
+            <dependency>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo</artifactId>
+                <version>${dubbo.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo-spring-boot-starter</artifactId>
+                <version>${dubbo.version}</version>
             </dependency>
 
         </dependencies>

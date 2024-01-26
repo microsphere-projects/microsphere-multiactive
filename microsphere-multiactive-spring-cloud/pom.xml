@@ -89,5 +89,12 @@
             <artifactId>microsphere-spring-cloud-commons</artifactId>
         </dependency>
 
+        <!-- Apache Dubbo-->
+        <dependency>
+            <groupId>org.apache.dubbo</groupId>
+            <artifactId>dubbo</artifactId>
+            <optional>true</optional>
+        </dependency>
+
     </dependencies>
 </project>

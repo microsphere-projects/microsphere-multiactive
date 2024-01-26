@@ -17,8 +17,8 @@ import static org.springframework.util.StringUtils.commaDelimitedListToStringArr
 /**
  * Zone Preference Filter
  *
+ * @param <E> the type of entity to filter
  * @author <a href="mailto:mercyblitz@gmail.com">Mercy<a/>
-
  */
 public class ZonePreferenceFilter<E> {
 
