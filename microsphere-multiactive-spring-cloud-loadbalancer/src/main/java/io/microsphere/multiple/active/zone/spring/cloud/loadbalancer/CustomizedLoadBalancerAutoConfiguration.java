@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
  * @since 1.0.0
  */
 @Configuration(proxyBeanMethods = false)
-@ConditionalOnProperty(value = "microsphere.customized-loadbalancer.enabled", havingValue = "true")
+@ConditionalOnProperty(value = "microsphere.spring.cloud.loadbalancer.customized", havingValue = "true")
 @LoadBalancerClients(defaultConfiguration = CustomizedLoadBalancerClientConfiguration.class)
 public class CustomizedLoadBalancerAutoConfiguration {
 }
