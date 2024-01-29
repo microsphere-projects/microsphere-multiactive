@@ -1,11 +1,7 @@
 package io.microsphere.multiple.active.zone.spring.cloud.loadbalancer;
 
-import org.springframework.boot.autoconfigure.AutoConfigureAfter;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.cloud.loadbalancer.annotation.LoadBalancerClients;
-import org.springframework.cloud.loadbalancer.config.LoadBalancerAutoConfiguration;
-import org.springframework.cloud.loadbalancer.support.LoadBalancerClientFactory;
 import org.springframework.context.annotation.Configuration;
 
 /**
@@ -15,9 +11,7 @@ import org.springframework.context.annotation.Configuration;
  * @since 1.0.0
  */
 @Configuration(proxyBeanMethods = false)
-@ConditionalOnClass(LoadBalancerClientFactory.class)
 @ConditionalOnProperty(value = "microsphere.customized-loadbalancer.enabled", havingValue = "true")
-@AutoConfigureAfter(LoadBalancerAutoConfiguration.class)
 @LoadBalancerClients(defaultConfiguration = CustomizedLoadBalancerClientConfiguration.class)
 public class CustomizedLoadBalancerAutoConfiguration {
 }
