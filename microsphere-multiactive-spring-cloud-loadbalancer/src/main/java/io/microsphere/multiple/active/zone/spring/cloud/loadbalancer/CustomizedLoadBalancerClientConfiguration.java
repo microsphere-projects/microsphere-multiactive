@@ -49,7 +49,6 @@ import org.springframework.core.type.AnnotatedTypeMetadata;
  * @since 1.0.0
  */
 @Configuration(proxyBeanMethods = false)
-@LoadBalancerClients
 public class CustomizedLoadBalancerClientConfiguration {
 
     @ConditionalOnReactiveDiscoveryEnabled
