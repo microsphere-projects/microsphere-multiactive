@@ -16,16 +16,12 @@
  */
 package io.microsphere.multiple.active.zone.spring.cloud.loadbalancer;
 
-import io.microsphere.multiple.active.zone.ZoneContext;
-import io.microsphere.multiple.active.zone.ZonePreferenceFilter;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.loadbalancer.core.DelegatingServiceInstanceListSupplier;
 import org.springframework.cloud.loadbalancer.core.ServiceInstanceListSupplier;
 import reactor.core.publisher.Flux;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 /**
  * Optimized {@link org.springframework.cloud.loadbalancer.core.ZonePreferenceServiceInstanceListSupplier}
