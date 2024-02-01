@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.microsphere.multiple.active.zone.spring.boot.autoconfigure.condition;
+package io.microsphere.multiple.active.zone.spring.boot.condition;
 
 import io.microsphere.multiple.active.zone.ZoneContext;
 import io.microsphere.multiple.active.zone.spring.ZoneLocator;

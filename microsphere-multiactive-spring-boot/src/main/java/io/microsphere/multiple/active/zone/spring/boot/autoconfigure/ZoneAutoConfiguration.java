@@ -3,7 +3,7 @@ package io.microsphere.multiple.active.zone.spring.boot.autoconfigure;
 import io.microsphere.multiple.active.zone.ZoneContext;
 import io.microsphere.multiple.active.zone.spring.CompositeZoneLocator;
 import io.microsphere.multiple.active.zone.spring.ZoneLocator;
-import io.microsphere.multiple.active.zone.spring.boot.autoconfigure.condition.ConditionalOnEnabledZone;
+import io.microsphere.multiple.active.zone.spring.boot.condition.ConditionalOnEnabledZone;
 import io.microsphere.multiple.active.zone.spring.event.ZoneContextChangedListener;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
