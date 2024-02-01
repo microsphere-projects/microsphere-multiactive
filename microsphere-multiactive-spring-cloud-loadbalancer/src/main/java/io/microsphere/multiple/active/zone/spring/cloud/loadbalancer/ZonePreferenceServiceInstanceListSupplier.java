@@ -16,6 +16,7 @@
  */
 package io.microsphere.multiple.active.zone.spring.cloud.loadbalancer;
 
+import io.microsphere.multiple.active.zone.ZonePreferenceFilter;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.loadbalancer.core.DelegatingServiceInstanceListSupplier;
 import org.springframework.cloud.loadbalancer.core.ServiceInstanceListSupplier;
