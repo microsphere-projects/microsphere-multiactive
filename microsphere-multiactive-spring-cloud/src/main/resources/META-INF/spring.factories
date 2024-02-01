@@ -1,12 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-io.microsphere.multiple.active.zone.ZoneAutoConfiguration
-
-org.springframework.context.ApplicationListener=\
-io.microsphere.multiple.active.zone.ZoneInitializedListener,\
-io.microsphere.multiple.active.zone.ZoneDiscoveryListener
-
-io.microsphere.multiple.active.zone.ZoneLocator=\
-io.microsphere.multiple.active.zone.aws.EcsContainerMetadataFileZoneLocator,\
-io.microsphere.multiple.active.zone.aws.EcsTaskMetadataEndpointV4ZoneLocator,\
-io.microsphere.multiple.active.zone.aws.Ec2AvailabilityZoneEndpointZoneLocator,\
-io.microsphere.multiple.active.zone.DefaultZoneLocator
+io.microsphere.multiple.active.zone.spring.cloud.autoconfigure.ZoneAutoConfiguration
