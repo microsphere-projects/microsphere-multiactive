@@ -16,9 +16,9 @@
  */
 package io.microsphere.multiple.active.zone.dubbo.rpc.cluster;
 
+import io.microsphere.multiple.active.zone.ZoneContext;
 import io.microsphere.multiple.active.zone.ZonePreferenceFilter;
 import org.apache.dubbo.common.URL;
-import org.apache.dubbo.common.extension.ExtensionFactory;
 import org.apache.dubbo.rpc.Invocation;
 import org.apache.dubbo.rpc.Invoker;
 import org.apache.dubbo.rpc.RpcException;
@@ -26,8 +26,6 @@ import org.apache.dubbo.rpc.cluster.Router;
 import org.apache.dubbo.rpc.cluster.router.AbstractRouter;
 
 import java.util.List;
-
-import static org.apache.dubbo.common.extension.ExtensionLoader.getExtensionLoader;
 
 /**
  * Apache Dubbo {@link Router} based on {@link ZonePreferenceFilter Zone Preference}
@@ -38,28 +36,19 @@ import static org.apache.dubbo.common.extension.ExtensionLoader.getExtensionLoad
  */
 public class ZonePreferenceRouter extends AbstractRouter {
 
-    private volatile ZonePreferenceFilter<Invoker<?>> zonePreferenceFilter;
-    private ExtensionFactory extensionFactory = getExtensionLoader(ExtensionFactory.class)
-            .getExtension("spring");
+    private final ZonePreferenceFilter<Invoker<?>> zonePreferenceFilter;
 
     public ZonePreferenceRouter(URL url) {
         super(url);
+        this.zonePreferenceFilter = createZonePreferenceFilter();
+    }
+
+    private ZonePreferenceFilter<Invoker<?>> createZonePreferenceFilter() {
+        return new ZonePreferenceFilter(ZoneContext.get(), InvokerZoneResolver.SINGLETON);
     }
 
     @Override
     public <T> List<Invoker<T>> route(List<Invoker<T>> invokers, URL url, Invocation invocation) throws RpcException {
-        ZonePreferenceFilter<Invoker<?>> zonePreferenceFilter = getZonePreferenceFilter();
-        List filteredLists = invokers;
-        filteredLists = zonePreferenceFilter.filter(filteredLists);
-        return filteredLists;
-    }
-
-    private ZonePreferenceFilter<Invoker<?>> getZonePreferenceFilter() {
-        ZonePreferenceFilter<Invoker<?>> zonePreferenceFilter = this.zonePreferenceFilter;
-        if (zonePreferenceFilter == null) {
-            zonePreferenceFilter = extensionFactory.getExtension(ZonePreferenceFilter.class, "zonePreferenceFilter");
-        }
-        this.zonePreferenceFilter = zonePreferenceFilter;
-        return zonePreferenceFilter;
+        return zonePreferenceFilter.filter((List) invokers);
     }
 }

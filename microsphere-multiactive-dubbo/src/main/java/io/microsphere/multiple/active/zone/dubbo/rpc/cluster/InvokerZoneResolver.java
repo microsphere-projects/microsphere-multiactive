@@ -31,6 +31,11 @@ import static io.microsphere.multiple.active.zone.ZoneConstants.ZONE_PROPERTY_NA
  */
 public class InvokerZoneResolver implements ZoneResolver<Invoker> {
 
+    /**
+     * Singleton instance
+     */
+    public static final InvokerZoneResolver SINGLETON = new InvokerZoneResolver();
+
     @Override
     public String resolve(Invoker invoker) {
         URL url = invoker.getUrl();
