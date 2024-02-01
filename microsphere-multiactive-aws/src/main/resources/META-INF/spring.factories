@@ -1,0 +1,4 @@
+io.microsphere.multiple.active.zone.spring.ZoneLocator=\
+io.microsphere.multiple.active.zone.spring.aws.EcsContainerMetadataFileZoneLocator,\
+io.microsphere.multiple.active.zone.spring.aws.EcsTaskMetadataEndpointV4ZoneLocator,\
+io.microsphere.multiple.active.zone.spring.aws.Ec2AvailabilityZoneEndpointZoneLocator
