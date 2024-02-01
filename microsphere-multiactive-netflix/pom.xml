@@ -18,10 +18,6 @@
     <name>Microsphere :: Multi-Active :: Netflix</name>
     <description>Microsphere Multi-Active Netflix</description>
 
-    <properties>
-        <spring-cloud-netflix.version>2.2.10.RELEASE</spring-cloud-netflix.version>
-    </properties>
-
     <dependencies>
 
         <!-- Microsphere -->
@@ -76,6 +72,18 @@
             <optional>true</optional>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-netflix-eureka-client</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-netflix-ribbon</artifactId>
+            <optional>true</optional>
+        </dependency>
+
         <!-- Netflix Eureka Client -->
         <dependency>
             <groupId>com.netflix.eureka</groupId>
@@ -101,8 +109,6 @@
             <artifactId>ribbon-eureka</artifactId>
             <optional>true</optional>
         </dependency>
-
-
 
     </dependencies>
 
