@@ -2,18 +2,18 @@ package io.microsphere.multiple.active.zone;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.util.StringUtils;
 
 import java.util.Map;
 
 import static io.microsphere.multiple.active.zone.ZoneConstants.ZONE_PROPERTY_NAME;
+import static io.microsphere.util.StringUtils.isNotBlank;
 
 /**
  * The handler to attach zone
- * 
+ *
  * @author <a href="mailto:mercyblitz@gmail.com">Mercy<a/>
- * @since 1.0.0
  * @see ZoneContext
+ * @since 1.0.0
  */
 public class ZoneAttachmentHandler {
 
@@ -27,7 +27,7 @@ public class ZoneAttachmentHandler {
 
     public void attachZone(Map<String, String> metadata) {
         String zone = zoneContext.getZone();
-        if (StringUtils.hasText(zone)) {
+        if (isNotBlank(zone)) {
             String propertyName = ZONE_PROPERTY_NAME;
             // If metadata is unmodifiable, UnsupportedOperationException will be thrown.
             try {
