@@ -16,9 +16,7 @@
  */
 package io.microsphere.multiple.active.zone.spring.cloud.loadbalancer;
 
-import io.microsphere.multiple.active.zone.ZoneContext;
-import io.microsphere.multiple.active.zone.ZonePreferenceFilter;
-import io.microsphere.multiple.active.zone.cloud.CloudServerZoneResolver;
+import io.microsphere.multiple.active.zone.spring.cloud.CloudServerZoneResolver;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.cloud.client.ConditionalOnBlockingDiscoveryEnabled;
