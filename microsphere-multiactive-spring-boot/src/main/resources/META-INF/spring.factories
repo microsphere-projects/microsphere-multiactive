@@ -1,2 +1,5 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
 io.microsphere.multiple.active.zone.spring.boot.autoconfigure.ZoneAutoConfiguration
+
+io.microsphere.multiple.active.zone.spring.ZoneLocator=\
+io.microsphere.multiple.active.zone.spring.DefaultZoneLocator
