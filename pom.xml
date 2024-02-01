@@ -46,8 +46,12 @@
         <module>microsphere-multiactive-parent</module>
         <module>microsphere-multiactive-dependencies</module>
         <module>microsphere-multiactive-commons</module>
+        <module>microsphere-multiactive-aws</module>
+        <module>microsphere-multiactive-netflix</module>
+        <module>microsphere-multiactive-dubbo</module>
+        <module>microsphere-multiactive-spring</module>
+        <module>microsphere-multiactive-spring-boot</module>
         <module>microsphere-multiactive-spring-cloud</module>
-        <module>microsphere-multiactive-spring-cloud-netflix</module>
         <module>microsphere-multiactive-spring-cloud-loadbalancer</module>
     </modules>
 
