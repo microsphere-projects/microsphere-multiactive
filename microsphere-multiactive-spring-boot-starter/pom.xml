@@ -11,25 +11,26 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.github.microsphere-projects</groupId>
-    <artifactId>microsphere-multiactive-spring-cloud</artifactId>
+    <artifactId>microsphere-multiactive-spring-boot-starter</artifactId>
     <version>${revision}</version>
     <packaging>jar</packaging>
 
-    <name>Microsphere :: Multi-Active :: Spring Cloud</name>
-    <description>Microsphere Multi-Active Spring Cloud</description>
+    <name>Microsphere :: Multi-Active :: Spring Boot Starter</name>
+    <description>Microsphere Multi-Active Spring Boot Starter</description>
 
     <dependencies>
 
         <!-- Microsphere -->
         <dependency>
             <groupId>io.github.microsphere-projects</groupId>
-            <artifactId>microsphere-multiactive-spring-boot</artifactId>
+            <artifactId>microsphere-multiactive-spring</artifactId>
             <version>${revision}</version>
         </dependency>
 
         <dependency>
             <groupId>io.github.microsphere-projects</groupId>
-            <artifactId>microsphere-spring-cloud-commons</artifactId>
+            <artifactId>microsphere-core-spring-boot-starter</artifactId>
+            <version>${revision}</version>
         </dependency>
 
         <!-- Spring Boot -->
@@ -63,16 +64,10 @@
             <optional>true</optional>
         </dependency>
 
-        <!-- Spring Cloud -->
+        <!-- SLF4j -->
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-commons</artifactId>
-            <optional>true</optional>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-context</artifactId>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
             <optional>true</optional>
         </dependency>
 

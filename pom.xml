@@ -50,8 +50,8 @@
         <module>microsphere-multiactive-netflix</module>
         <module>microsphere-multiactive-dubbo</module>
         <module>microsphere-multiactive-spring</module>
-        <module>microsphere-multiactive-spring-boot</module>
-        <module>microsphere-multiactive-spring-cloud</module>
+        <module>microsphere-multiactive-spring-boot-starter</module>
+        <module>microsphere-multiactive-spring-cloud-starter</module>
         <module>microsphere-multiactive-spring-cloud-loadbalancer</module>
     </modules>
 

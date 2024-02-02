@@ -86,7 +86,7 @@
         <!-- Microsphere -->
         <dependency>
             <groupId>io.github.microsphere-projects</groupId>
-            <artifactId>microsphere-multiactive-spring-cloud</artifactId>
+            <artifactId>microsphere-multiactive-spring-cloud-starter</artifactId>
             <version>${revision}</version>
         </dependency>
 
