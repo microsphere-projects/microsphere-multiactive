@@ -23,7 +23,6 @@
         <microsphere-spring.version>${revision}</microsphere-spring.version>
         <microsphere-spring-boot.version>${revision}</microsphere-spring-boot.version>
         <microsphere-spring-cloud.version>${revision}</microsphere-spring-cloud.version>
-<!--        <dubbo.version>3.2.5</dubbo.version>-->
         <dubbo.version>2.7.8</dubbo.version>
         <!-- BOM versions -->
         <spring-boot.version>2.7.18</spring-boot.version>
