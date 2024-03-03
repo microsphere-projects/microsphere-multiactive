@@ -40,7 +40,7 @@ public class ZoneAutoConfiguration {
     @Primary
     public CompositeZoneLocator zoneLocator(Collection<ZoneLocator> zoneLocatorBeans, ConfigurableApplicationContext context) {
         // Load from Spring Factories
-        List<ZoneLocator> zoneLocators = loadFactories(ZoneLocator.class, context);
+        List<ZoneLocator> zoneLocators = loadFactories(context, ZoneLocator.class);
         List<ZoneLocator> allZoneLocators = new ArrayList<>(zoneLocatorBeans.size() + zoneLocators.size());
         // Add ZoneLocator Spring Beans
         allZoneLocators.addAll(zoneLocatorBeans);
