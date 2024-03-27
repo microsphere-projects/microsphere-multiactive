@@ -1,1 +1,2 @@
+io.microsphere.multiple.active.zone.spring.cloud.autoconfigure.ZoneAutoConfiguration
 io.microsphere.multiple.active.zone.spring.cloud.loadbalancer.CustomizedLoadBalancerAutoConfiguration

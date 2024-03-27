@@ -11,12 +11,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.github.microsphere-projects</groupId>
-    <artifactId>microsphere-multiactive-spring-boot-starter</artifactId>
+    <artifactId>microsphere-multiactive-spring-boot</artifactId>
     <version>${revision}</version>
     <packaging>jar</packaging>
 
-    <name>Microsphere :: Multi-Active :: Spring Boot Starter</name>
-    <description>Microsphere Multi-Active Spring Boot Starter</description>
+    <name>Microsphere :: Multi-Active :: Spring Boot</name>
+    <description>Microsphere Multi-Active Spring Boot</description>
 
     <dependencies>
 

@@ -11,14 +11,26 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.github.microsphere-projects</groupId>
-    <artifactId>microsphere-multiactive-spring-cloud-loadbalancer</artifactId>
+    <artifactId>microsphere-multiactive-spring-cloud</artifactId>
     <version>${revision}</version>
     <packaging>jar</packaging>
 
-    <name>Microsphere :: Multi-Active :: Spring Cloud LoadBalancer</name>
-    <description>Microsphere Multi-Active Spring Cloud LoadBalancer</description>
+    <name>Microsphere :: Multi-Active :: Spring Cloud</name>
+    <description>Microsphere Multi-Active Spring Cloud</description>
 
     <dependencies>
+
+        <!-- Microsphere -->
+        <dependency>
+            <groupId>io.github.microsphere-projects</groupId>
+            <artifactId>microsphere-multiactive-spring-boot</artifactId>
+            <version>${revision}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.microsphere-projects</groupId>
+            <artifactId>microsphere-spring-cloud-commons</artifactId>
+        </dependency>
 
         <!-- Spring Boot -->
         <dependency>
@@ -70,29 +82,5 @@
             <optional>true</optional>
         </dependency>
 
-        <!-- Spring Cloud Netflix Eureka Client -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-netflix-eureka-client</artifactId>
-            <optional>true</optional>
-        </dependency>
-
-        <dependency>
-            <groupId>com.netflix.eureka</groupId>
-            <artifactId>eureka-client</artifactId>
-            <optional>true</optional>
-        </dependency>
-
-        <!-- Microsphere -->
-        <dependency>
-            <groupId>io.github.microsphere-projects</groupId>
-            <artifactId>microsphere-multiactive-spring-cloud-starter</artifactId>
-            <version>${revision}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>io.github.microsphere-projects</groupId>
-            <artifactId>microsphere-spring-cloud-commons</artifactId>
-        </dependency>
     </dependencies>
 </project>
