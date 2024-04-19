@@ -46,11 +46,11 @@
     </developers>
 
     <scm>
-        <url>https://github.com/microsphere-projects/microsphere-multiactive</url>
-        <connection>scm:git:git://github.com/microsphere-projects/microsphere-multiactive.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com/microsphere-projects/microsphere-multiactive.git
-        </developerConnection>
+        <url>git@github.com/microsphere-projects/microsphere-multiactive.git</url>
+        <connection>scm:git:${project.scm.url}</connection>
+        <developerConnection>scm:git:ssh://${project.scm.url}</developerConnection>
     </scm>
+
 
     <properties>
         <revision>0.0.1-SNAPSHOT</revision>
@@ -91,5 +91,5 @@
             <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
         </repository>
     </repositories>
-    
+
 </project>
