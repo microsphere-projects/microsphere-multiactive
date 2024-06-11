@@ -19,7 +19,7 @@
     <description>Microsphere Multi-Active Parent</description>
 
     <properties>
-        <microsphere-spring-cloud.version>${revision}</microsphere-spring-cloud.version>
+        <microsphere-spring-cloud.version>0.0.1</microsphere-spring-cloud.version>
         <dubbo.version>2.7.8</dubbo.version>
     </properties>
 
