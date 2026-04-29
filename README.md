@@ -4,7 +4,7 @@
 
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/microsphere-projects/microsphere-multiactive)
 [![Maven Build](https://github.com/microsphere-projects/microsphere-multiactive/actions/workflows/maven-build.yml/badge.svg)](https://github.com/microsphere-projects/microsphere-multiactive/actions/workflows/maven-build.yml)
-[![Codecov](https://codecov.io/gh/microsphere-projects/microsphere-multiactive/branch/main/graph/badge.svg)](https://app.codecov.io/gh/microsphere-projects/microsphere-multiactive)
+[![Codecov](https://codecov.io/gh/microsphere-projects/microsphere-multiactive/branch/dev-1.x/graph/badge.svg)](https://app.codecov.io/gh/microsphere-projects/microsphere-multiactive)
 ![Maven](https://img.shields.io/maven-central/v/io.github.microsphere-projects/microsphere-multiactive.svg)
 ![License](https://img.shields.io/github/license/microsphere-projects/microsphere-multiactive.svg)
 
@@ -13,17 +13,18 @@ distributed applications. The project enables applications to automatically disc
 implement intelligent routing that prefers same-zone instances while providing fallback capabilities for cross-zone
 scenarios.
 
-
 ## Modules
 
 | **Module**                               | **Purpose**                                                            |
 |------------------------------------------|------------------------------------------------------------------------|
 | **microsphere-multiactive-parent**       | Defines the parent POM with dependency management and version profiles |
 | **microsphere-multiactive-dependencies** | Centralizes dependency management for all project modules              |
-| **microsphere-multiactive-commons**      | Common featurues of Multiactive extension                              |
-| **microsphere-multiactive-aws**          | AWS featurues of Multiactive extension                                 |
-| **microsphere-multiactive-plugins**      | The plugins of Multiactive                                             |
-| **microsphere-multiactive-spring**       | Integration for Multiactive Spring                                     |
+| **microsphere-multiactive-commons**      | Core zone management abstractions                                      |
+| **microsphere-multiactive-aws**          | AWS zone discovery                                                     |
+| **microsphere-multiactive-netflix**      | Netflix OSS integration                                                |
+| **microsphere-multiactive-spring**       | Spring Framework Intergation                                           |
+| **microsphere-multiactive-spring-boot**  | Spring Boot Intergation                                                |
+| **microsphere-multiactive-spring-cloud** | Spring Cloud Intergation                                               |
 
 ## Getting Started
 
@@ -107,12 +108,11 @@ We welcome your contributions! Please read [Code of Conduct](./CODE_OF_CONDUCT.m
 ### JavaDoc
 
 - [microsphere-multiactive-commons](https://javadoc.io/doc/io.github.microsphere-projects/microsphere-multiactive-commons)
+- [microsphere-multiactive-aws](https://javadoc.io/doc/io.github.microsphere-projects/microsphere-multiactive-aws)
+- [microsphere-multiactive-netflix](https://javadoc.io/doc/io.github.microsphere-projects/microsphere-multiactive-netflix)
 - [microsphere-multiactive-spring](https://javadoc.io/doc/io.github.microsphere-projects/microsphere-multiactive-spring)
-- [microsphere-multiactive-alibaba-druid](https://javadoc.io/doc/io.github.microsphere-projects/microsphere-multiactive-alibaba-druid)
-- [microsphere-multiactive-mybatis](https://javadoc.io/doc/io.github.microsphere-projects/microsphere-multiactive-mybatis)
-- [microsphere-multiactive-openfeign](https://javadoc.io/doc/io.github.microsphere-projects/microsphere-multiactive-openfeign)
-- [microsphere-multiactive-spring-web](https://javadoc.io/doc/io.github.microsphere-projects/microsphere-multiactive-spring-web)
-- [microsphere-multiactive-spring](https://javadoc.io/doc/io.github.microsphere-projects/microsphere-multiactive-spring)
+- [microsphere-multiactive-spring-boot](https://javadoc.io/doc/io.github.microsphere-projects/microsphere-multiactive-spring-boot)
+- [microsphere-multiactive-spring-cloud](https://javadoc.io/doc/io.github.microsphere-projects/microsphere-multiactive-spring-cloud)
 
 ## License
 

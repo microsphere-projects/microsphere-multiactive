@@ -19,7 +19,7 @@
     <description>Microsphere Multi-Active Netflix</description>
 
     <properties>
-        <netflix.ribbon.version>2.3.0</netflix.ribbon.version>
+        <netflix.ribbon.version>2.7.18</netflix.ribbon.version>
     </properties>
 
     <dependencies>

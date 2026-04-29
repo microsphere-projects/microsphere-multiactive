@@ -10,11 +10,11 @@ name: Maven Publish
 
 on:
   push:
-    branches: [ 'release' ]
+    branches: [ 'release-1.x' ]
   workflow_dispatch:
     inputs:
       revision:
-        description: 'The version to publish for Spring Cloud 2022+ and JDK 17+'
+        description: 'The version to publish for Spring Cloud Hoxton to 2021'
         required: true
         default: '${major}.${minor}.${patch}'
 
@@ -38,7 +38,7 @@ jobs:
       - name: Setup Maven Central Repository
         uses: actions/setup-java@v5
         with:
-          java-version: '17'
+          java-version: '11'
           distribution: 'temurin'
           server-id: ossrh
           server-username: MAVEN_USERNAME
@@ -192,16 +192,16 @@ jobs:
           git diff --cached --quiet && echo "No changes to commit" || \
             git commit -m "chore: bump version to next patch after publishing ${{ inputs.revision }}" && git push
 
-      - name: Merge release into main
+      - name: Merge release-1.x into dev-1.x
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          if ! git checkout main; then
-            echo "::error::Branch 'main' does not exist. Skipping merge."
+          if ! git checkout dev-1.x; then
+            echo "::error::Branch 'dev-1.x' does not exist. Skipping merge."
             exit 1
           fi
-          if ! git merge --no-ff origin/release -m "chore: merge release into main [skip ci]"; then
-            echo "::error::Merge conflict detected when merging release into main. Manual intervention required."
+          if ! git merge --no-ff origin/release-1.x -m "chore: merge release-1.x into dev-1.x [skip ci]"; then
+            echo "::error::Merge conflict detected when merging release-1.x into dev-1.x. Manual intervention required."
             exit 1
           fi
-          git push origin main
+          git push origin dev-1.x
