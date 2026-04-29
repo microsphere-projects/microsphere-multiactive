@@ -20,4 +20,3 @@
 ---
 
 Version `0.1.0` sets a strong foundation with modular enhancements, CI optimizations, and comprehensive documentation.
-
