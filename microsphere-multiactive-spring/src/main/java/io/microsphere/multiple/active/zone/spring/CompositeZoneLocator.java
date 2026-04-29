@@ -94,7 +94,9 @@ public class CompositeZoneLocator implements ZoneLocator {
 
         this.zone = zone;
 
-        System.setProperty(CURRENT_ZONE_PROPERTY_NAME, this.zone);
+        if (this.zone != null) {
+            System.setProperty(CURRENT_ZONE_PROPERTY_NAME, this.zone);
+        }
 
         return zone;
     }
