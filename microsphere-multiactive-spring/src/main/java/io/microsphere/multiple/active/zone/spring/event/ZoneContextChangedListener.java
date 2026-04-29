@@ -1,10 +1,10 @@
 package io.microsphere.multiple.active.zone.spring.event;
 
+import io.microsphere.logging.Logger;
+import io.microsphere.logging.LoggerFactory;
 import io.microsphere.multiple.active.zone.ZoneConstants;
 import io.microsphere.multiple.active.zone.ZoneContext;
 import io.microsphere.multiple.active.zone.spring.ZoneLocator;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;

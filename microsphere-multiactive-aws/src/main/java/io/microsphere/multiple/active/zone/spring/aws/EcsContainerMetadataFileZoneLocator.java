@@ -3,13 +3,16 @@ package io.microsphere.multiple.active.zone.spring.aws;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.microsphere.multiple.active.zone.spring.AbstractZoneLocator;
 import io.microsphere.multiple.active.zone.spring.ZoneLocator;
-import org.apache.commons.io.FileUtils;
 import org.springframework.core.env.Environment;
 import org.springframework.util.StringUtils;
 
 import java.io.File;
-import java.nio.charset.StandardCharsets;
+import java.io.FileInputStream;
+import java.io.InputStream;
 import java.util.Map;
+
+import static io.microsphere.io.IOUtils.copyToString;
+import static java.nio.charset.StandardCharsets.UTF_8;
 
 
 /**
@@ -17,13 +20,13 @@ import java.util.Map;
  * The {@link ZoneLocator} based on <a href=
  * "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/container-metadata.html">Amazon ECS
  * container metadata file</a>.
- * 
+ * <p>
  * Beginning with version 1.15.0 of the Amazon ECS container agent, various container metadata is
  * available within your containers or the host container instance.
  *
+ * @author <a href="mailto:mercyblitz@gmail.com">Mercy<a/>
  * @see ZoneLocator
  * @see EcsTaskMetadataEndpointV4ZoneLocator
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy<a/>
  * @since 1.0.0
  */
 public class EcsContainerMetadataFileZoneLocator extends AbstractZoneLocator {
@@ -50,8 +53,8 @@ public class EcsContainerMetadataFileZoneLocator extends AbstractZoneLocator {
         if (StringUtils.hasText(metadataFilePath)) {
             File metadataFile = new File(metadataFilePath);
             if (metadataFile.canRead()) {
-                try {
-                    String json = FileUtils.readFileToString(metadataFile, StandardCharsets.UTF_8);
+                try (InputStream inputStream = new FileInputStream(metadataFile)) {
+                    String json = copyToString(inputStream, UTF_8);
                     ObjectMapper objectMapper = new ObjectMapper();
                     Map metadata = objectMapper.readValue(json, Map.class);
                     Object zoneValue = metadata.get(ZONE_FIELD_NAME);

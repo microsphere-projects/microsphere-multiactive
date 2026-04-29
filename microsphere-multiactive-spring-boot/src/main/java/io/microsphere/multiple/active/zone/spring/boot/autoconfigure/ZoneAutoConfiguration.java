@@ -17,7 +17,7 @@ import java.util.List;
 
 import static io.microsphere.multiple.active.zone.spring.ZoneUtils.ZONE_CONTEXT_BEAN_NAME;
 import static io.microsphere.multiple.active.zone.spring.ZoneUtils.ZONE_LOCATOR_BEAN_NAME;
-import static io.microsphere.spring.util.SpringFactoriesLoaderUtils.loadFactories;
+import static io.microsphere.spring.core.io.support.SpringFactoriesLoaderUtils.loadFactories;
 import static org.springframework.core.annotation.AnnotationAwareOrderComparator.sort;
 
 /**

@@ -1,17 +1,17 @@
 package io.microsphere.multiple.active.zone;
 
-import org.apache.commons.io.IOUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import io.microsphere.logging.Logger;
+import io.microsphere.logging.LoggerFactory;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLConnection;
-import java.nio.charset.StandardCharsets;
 
-import static org.apache.commons.lang3.StringUtils.isNotBlank;
+import static io.microsphere.io.IOUtils.copyToString;
+import static io.microsphere.util.StringUtils.isNotBlank;
+import static java.nio.charset.StandardCharsets.UTF_8;
 
 /**
  * The utilities class for simple http request.
@@ -40,7 +40,7 @@ public abstract class HttpUtils {
                 urlConnection.setConnectTimeout(timeout);
                 urlConnection.setReadTimeout(timeout);
                 try (InputStream inputStream = httpURLConnection.getInputStream()) {
-                    content = IOUtils.toString(inputStream, StandardCharsets.UTF_8);
+                    content = copyToString(inputStream, UTF_8);
                     logger.info("The response of Availability Zone Endpoint[URI : '{}'] : {}", url, content);
                 } finally {
                     httpURLConnection.disconnect();

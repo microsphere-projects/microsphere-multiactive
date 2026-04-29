@@ -1,7 +1,7 @@
 package io.microsphere.multiple.active.zone;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import io.microsphere.logging.Logger;
+import io.microsphere.logging.LoggerFactory;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -12,7 +12,7 @@ import static io.microsphere.multiple.active.zone.ZoneConstants.DEFAULT_ZONE;
 import static io.microsphere.multiple.active.zone.ZoneConstants.PREFERENCE_ENABLED_PROPERTY_NAME;
 import static io.microsphere.multiple.active.zone.ZoneConstants.ZONE_ENABLED_PROPERTY_NAME;
 import static io.microsphere.util.StringUtils.isBlank;
-import static org.apache.commons.lang3.StringUtils.split;
+import static io.microsphere.util.StringUtils.split;
 
 
 /**

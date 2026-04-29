@@ -1,8 +1,8 @@
 package io.microsphere.multiple.active.zone.spring;
 
+import io.microsphere.logging.Logger;
+import io.microsphere.logging.LoggerFactory;
 import io.microsphere.multiple.active.zone.ZoneContext;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
 
 /**

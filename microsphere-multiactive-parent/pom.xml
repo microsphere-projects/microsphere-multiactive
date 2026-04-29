@@ -19,8 +19,8 @@
     <description>Microsphere Multi-Active Parent</description>
 
     <properties>
-        <microsphere-spring-cloud.version>0.0.1</microsphere-spring-cloud.version>
-        <dubbo.version>2.7.8</dubbo.version>
+        <!-- BOM versions -->
+        <microsphere-spring-cloud.version>0.2.10</microsphere-spring-cloud.version>
     </properties>
 
     <dependencyManagement>
@@ -33,19 +33,6 @@
                 <version>${microsphere-spring-cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
-            </dependency>
-
-            <!-- Apache Dubbo -->
-            <dependency>
-                <groupId>org.apache.dubbo</groupId>
-                <artifactId>dubbo</artifactId>
-                <version>${dubbo.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.apache.dubbo</groupId>
-                <artifactId>dubbo-spring-boot-starter</artifactId>
-                <version>${dubbo.version}</version>
             </dependency>
 
         </dependencies>

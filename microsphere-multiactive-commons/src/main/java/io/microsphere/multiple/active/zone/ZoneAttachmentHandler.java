@@ -1,7 +1,7 @@
 package io.microsphere.multiple.active.zone;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import io.microsphere.logging.Logger;
+import io.microsphere.logging.LoggerFactory;
 
 import java.util.Map;
 

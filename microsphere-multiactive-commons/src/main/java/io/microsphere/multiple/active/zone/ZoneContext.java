@@ -1,8 +1,7 @@
 package io.microsphere.multiple.active.zone;
 
-import org.apache.commons.lang3.StringUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import io.microsphere.logging.Logger;
+import io.microsphere.logging.LoggerFactory;
 
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
@@ -19,7 +18,8 @@ import static io.microsphere.multiple.active.zone.ZoneConstants.DEFAULT_ZONE_ENA
 import static io.microsphere.multiple.active.zone.ZoneConstants.DEFAULT_ZONE_PREFERENCE_ENABLED;
 import static io.microsphere.multiple.active.zone.ZoneConstants.DEFAULT_ZONE_PREFERENCE_FILTER_ORDER;
 import static io.microsphere.util.StringUtils.isBlank;
-import static org.apache.commons.lang3.StringUtils.split;
+import static io.microsphere.util.StringUtils.split;
+import static io.microsphere.util.StringUtils.trimAllWhitespace;
 
 /**
  * The context of zone
@@ -57,7 +57,7 @@ public class ZoneContext {
 
     public void setZone(String zone) {
         if (isPropertyChanged("zone", this.zone, zone)) {
-            this.zone = StringUtils.trim(zone);
+            this.zone = trimAllWhitespace(zone);
         }
     }
 
@@ -103,7 +103,7 @@ public class ZoneContext {
         StringJoiner stringJoiner = new StringJoiner(COMMA);
 
         for (int i = 0; i < values.length; i++) {
-            stringJoiner.add(StringUtils.trim(values[i]));
+            stringJoiner.add(trimAllWhitespace(values[i]));
         }
 
         return stringJoiner.toString();
