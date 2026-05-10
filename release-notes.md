@@ -19,3 +19,24 @@
 - **Maven Updates:** Added and updated Maven wrapper to version 3.3.4. ([66c1f30](https://github.com/microsphere-projects/microsphere-multiactive/commit/66c1f30), [2f93093](https://github.com/microsphere-projects/microsphere-multiactive/commit/2f93093))
 - **Miscellaneous Cleanup:** Removed unused code and deprecated modules. ([4c4a3e7](https://github.com/microsphere-projects/microsphere-multiactive/commit/4c4a3e7), [cb2af2f](https://github.com/microsphere-projects/microsphere-multiactive/commit/cb2af2f))
 
+## v0.2.1
+
+# Release Notes - Version 0.2.1 🎉
+
+## Test Improvements
+- Added comprehensive test coverage for commons and spring modules. ([#6](https://github.com/microsphere-projects/copilot/pull/6))
+- Fixed `assertNull` usage in `ZoneResolverTest` based on code review feedback.
+
+## Documentation
+- Updated branch version details in `README`. 
+
+## Build and Workflow Enhancements
+- Improved release notes and GitHub release creation process.
+- Updated dependency `microsphere-spring-cloud` to `0.2.11`.
+- Bumped parent version to `0.2.11`.
+
+---
+
+Feel free to share your feedback or report any issues! 🌟
+
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.2.0...0.2.1
