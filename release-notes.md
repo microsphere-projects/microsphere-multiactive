@@ -20,3 +20,32 @@
 ---
 
 Version `0.1.0` sets a strong foundation with modular enhancements, CI optimizations, and comprehensive documentation.
+## v0.1.1
+
+# Release Notes: Version 0.1.1
+
+## New Features
+- Add comprehensive test coverage for commons and spring modules. ([cd9cda5](https://github.com/microsphere-projects/microsphere/commit/cd9cda5))
+
+## Bug Fixes
+- Fix `assertNull` usage in `ZoneResolverTest` as per code review. ([20e3155](https://github.com/microsphere-projects/microsphere/commit/20e3155))
+
+## Documentation
+- Add full changelog link and expand release notes. ([f240c5f](https://github.com/microsphere-projects/microsphere/commit/f240c5f))
+- Update branch latest versions in `README.md`. ([b62ee43](https://github.com/microsphere-projects/microsphere/commit/b62ee43))
+
+## Dependency Updates
+- Bump `microsphere-spring-cloud` to version 0.1.11. ([71ad81d](https://github.com/microsphere-projects/microsphere/commit/71ad81d))
+
+## Build and Workflow Enhancements
+- Remove deprecated GitHub Actions workflows. ([8c8c68c](https://github.com/microsphere-projects/microsphere/commit/8c8c68c))
+- Remove wiki docs generator script for simplification. ([853e533](https://github.com/microsphere-projects/microsphere/commit/853e533))
+
+## Test Improvements
+- Enhance code coverage by adding test cases for better quality assurance. ([cd9cda5](https://github.com/microsphere-projects/microsphere/commit/cd9cda5))
+
+---
+
+For the full changelog, refer to the [changelog](LINK_TO_CHANGELOG).
+
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.2.0...0.1.1
