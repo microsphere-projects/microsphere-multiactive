@@ -39,4 +39,25 @@
 
 Feel free to share your feedback or report any issues! 🌟
 
-**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.2.0...0.2.1
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.2.0...0.2.1## v0.2.2
+
+# Release Notes - Version 0.2.2
+
+## Build and Workflow Enhancements
+- Added Maven server credentials to workflows. ([b61c962](#))
+- Updated GitHub Actions Maven workflows and resolved EOF issues. ([c7f5bd8](#))
+
+## Documentation
+- Updated README to include branch table and version details. ([b6c2c7f](#))
+
+## Dependency Updates
+- Upgraded `microsphere-spring-cloud` to version 0.2.12. ([7288139](#))
+
+## Other Changes
+- Performed regular branch merges and version bump to prepare for the next patch cycle. ([chore commits](#))  
+
+---
+
+*For a detailed view of changes, refer to the commit history.*
+
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.2.1...0.2.2
