@@ -48,4 +48,26 @@ Version `0.1.0` sets a strong foundation with modular enhancements, CI optimizat
 
 For the full changelog, refer to the [changelog](LINK_TO_CHANGELOG).
 
-**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.2.0...0.1.1
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.2.0...0.1.1## v0.1.2
+
+# Release Notes - Version 0.1.2
+
+## Build and Workflow Enhancements
+- Added OSSRH credentials for publish workflow. ([a009f41](https://github.com/mercyblitz/microsphere-multiactive/commit/a009f41))
+- Fixed Java setup and Maven usage in workflows. ([4b6340a](https://github.com/mercyblitz/microsphere-multiactive/commit/4b6340a))
+
+## Dependency Updates
+- Bumped `microsphere-spring-cloud` to version 0.1.12. ([9adb99d](https://github.com/mercyblitz/microsphere-multiactive/commit/9adb99d))
+
+## Documentation
+- Updated README with revised branch names and version information. ([e187bde](https://github.com/mercyblitz/microsphere-multiactive/commit/e187bde))
+
+## Other Changes
+- Synchronized `release-1.x` and `dev-1.x` branches with project updates. ([3cd95ce](https://github.com/mercyblitz/microsphere-multiactive/commit/3cd95ce), [e6c9c9f](https://github.com/mercyblitz/microsphere-multiactive/commit/e6c9c9f))
+- Bumped version to next patch after publishing 0.1.1. ([a1721ca](https://github.com/mercyblitz/microsphere-multiactive/commit/a1721ca))
+
+---
+
+**Full Changelog**: [v0.1.1...v0.1.2](https://github.com/mercyblitz/microsphere-multiactive/compare/v0.1.1...v0.1.2)
+
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.1.1...0.1.2
