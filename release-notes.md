@@ -60,4 +60,20 @@ Feel free to share your feedback or report any issues! 🌟
 
 *For a detailed view of changes, refer to the commit history.*
 
-**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.2.1...0.2.2
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.2.1...0.2.2## v0.2.3
+
+# Release Notes for Version 0.2.3
+
+## Dependency Updates
+- Updated `microsphere-spring-cloud-parent` to version `0.2.13`. ([#11](https://github.com/microsphere-projects/microsphere-spring-cloud))
+- Updated `microsphere-spring-cloud-dependencies` to version `0.2.13`. ([#12](https://github.com/microsphere-projects/microsphere-spring-cloud))
+
+## Build and Workflow Enhancements
+- Merged main branch changes into release. (`[skip ci]`)
+- Bumped version to next patch post `0.2.2`.
+
+---
+
+No new features, bug fixes, documentations, or test improvements were introduced in this release.
+
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.2.2...0.2.3
