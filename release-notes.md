@@ -70,4 +70,19 @@ For the full changelog, refer to the [changelog](LINK_TO_CHANGELOG).
 
 **Full Changelog**: [v0.1.1...v0.1.2](https://github.com/mercyblitz/microsphere-multiactive/compare/v0.1.1...v0.1.2)
 
-**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.1.1...0.1.2
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.1.1...0.1.2## v0.1.3
+
+# Release Notes for v0.1.3
+
+## Dependency Updates
+- Bumped Microsphere Spring Cloud to version `0.1.13`. ([c73d7f2](https://github.com/mercyblitz/dev-1.x/commit/c73d7f2))
+
+## Build and Workflow Enhancements
+- Merged `release-1.x` into `dev-1.x` to keep branches in sync. ([66d9066](https://github.com/mercyblitz/dev-1.x/commit/66d9066))
+
+## Other Changes
+- Bumped version to next patch after publishing `v0.1.2`. ([3869325](https://github.com/mercyblitz/dev-1.x/commit/3869325))
+
+**Full Changelog:** [v0.1.2...v0.1.3](https://github.com/mercyblitz/dev-1.x/compare/v0.1.2...v0.1.3)
+
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.1.2...0.1.3
