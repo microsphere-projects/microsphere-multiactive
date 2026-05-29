@@ -12,7 +12,7 @@ import static java.util.Collections.unmodifiableList;
 
 /**
  * {@link ZoneContext} Changed {@link ApplicationEvent Event}
- * 
+ *
  * @author <a href="mailto:mercyblitz@gmail.com">Mercy<a/>
  * @since 1.0.0
  */
@@ -24,7 +24,7 @@ public class ZoneContextChangedEvent extends ApplicationContextEvent {
 
     /**
      * Create a new ContextStartedEvent.
-     * 
+     *
      * @param context the {@code ApplicationContext} that the event is raised for (must not be
      *        {@code null})
      * @param zoneContext {@link ZoneContext}
