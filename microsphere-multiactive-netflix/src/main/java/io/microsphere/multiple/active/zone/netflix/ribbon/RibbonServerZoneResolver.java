@@ -16,7 +16,6 @@
  */
 package io.microsphere.multiple.active.zone.netflix.ribbon;
 
-
 import com.netflix.loadbalancer.Server;
 import io.microsphere.multiple.active.zone.ZoneResolver;
 
