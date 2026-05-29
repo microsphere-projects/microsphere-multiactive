@@ -22,7 +22,6 @@ import org.springframework.context.annotation.Import;
 @AutoConfigureAfter(name = {"org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration"})
 public class ZoneAutoConfiguration {
 
-
     @Bean
     @ConditionalOnClass(name = "org.springframework.cloud.client.discovery.event.InstancePreRegisteredEvent")
     public ZoneAttachmentListener zoneAttachmentListener() {

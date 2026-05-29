@@ -9,7 +9,7 @@ import static io.microsphere.multiple.active.zone.ZoneConstants.ZONE_PROPERTY_NA
 
 /**
  * {@link ZoneResolver} for Netflix Eureka {@link InstanceInfo}
- * 
+ *
  * @author <a href="mailto:mercyblitz@gmail.com">Mercy<a/>
  * @since 1.0.0
  */
