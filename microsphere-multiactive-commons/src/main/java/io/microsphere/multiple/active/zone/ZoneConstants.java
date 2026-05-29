@@ -1,6 +1,5 @@
 package io.microsphere.multiple.active.zone;
 
-
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -51,7 +50,6 @@ public interface ZoneConstants {
     String LOCATOR_FAST_FAIL_PROPERTY_NAME = LOCATOR_PROPERTY_NAME_PREFIX + ".fast-fail";
 
     String LOCATOR_TIMEOUT_PROPERTY_NAME = LOCATOR_PROPERTY_NAME_PREFIX + ".timeout";
-
 
     // Default values
 

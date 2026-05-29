@@ -12,7 +12,7 @@ public interface ZoneLocator {
 
     /**
      * Current {@link ZoneLocator} supports or not ?
-     * 
+     *
      * @param environment {@link Environment}
      * @return if <code>true</code>, {@link #locate(Environment)} will be invoked, or invocation will be
      *         ignored.
@@ -21,10 +21,9 @@ public interface ZoneLocator {
 
     /**
      * Locate the zone
-     * 
+     *
      * @return zone info
      */
     String locate(Environment environment);
-
 
 }
