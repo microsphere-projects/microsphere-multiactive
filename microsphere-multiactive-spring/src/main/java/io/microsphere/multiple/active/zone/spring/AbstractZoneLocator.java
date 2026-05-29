@@ -7,7 +7,7 @@ import org.springframework.core.Ordered;
 
 /**
  * The abstract implementation {@link ZoneLocator}
- * 
+ *
  * @author <a href="mailto:mercyblitz@gmail.com">Mercy<a/>
  * @since 1.0.0
  */
@@ -36,7 +36,6 @@ public abstract class AbstractZoneLocator implements ZoneLocator, BeanNameAware,
     public final void setOrder(int order) {
         this.order = order;
     }
-
 
     @Override
     public String toString() {
