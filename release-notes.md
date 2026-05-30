@@ -85,4 +85,27 @@ For the full changelog, refer to the [changelog](LINK_TO_CHANGELOG).
 
 **Full Changelog:** [v0.1.2...v0.1.3](https://github.com/mercyblitz/dev-1.x/compare/v0.1.2...v0.1.3)
 
-**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.1.2...0.1.3
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.1.2...0.1.3## v0.1.4
+
+```markdown
+# Release Notes - Version 0.1.4
+
+## Dependency Updates
+- Upgraded Microsphere Spring Cloud to `0.1.14`. (#243da3a)
+
+## Documentation
+- Updated `README` to reflect updated branch versions. (#65398d6)
+
+## Bug Fixes
+- Fixed formatting issues by removing duplicate blank lines and trailing whitespace. (#abe82ba)
+
+## Build and Workflow Enhancements
+- Synced `release-1.x` branch with `dev-1.x` for consistency. (#512d4bb)
+- Post-release version bumped to prepare for the next patch release. (#a7b8b03)
+
+## Other Changes
+- Merged updates from `microsphere-projects:dev-1.x`. (#0a53365)
+- Removed redundant line separators in code as part of cleanup. (#8d6b8e0)
+```
+
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.1.3...0.1.4
