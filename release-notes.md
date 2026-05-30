@@ -76,4 +76,20 @@ Feel free to share your feedback or report any issues! 🌟
 
 No new features, bug fixes, documentations, or test improvements were introduced in this release.
 
-**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.2.2...0.2.3
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.2.2...0.2.3## v0.2.4
+
+# Release Notes for v0.2.4
+
+## Dependency Updates
+- **microsphere-spring-cloud**: Bumped to version `0.2.14`. (fbbc4da)
+
+## Bug Fixes
+- Removed duplicated line separators and trailing whitespace from Java source files to improve code cleanliness. (af199e6, #14)
+
+## Documentation
+- Updated branch version references in `README`. (e35e24a)
+
+## Other Changes
+- Internal merges and version bumps post-release. (a4386b8, dda1ee0, 904ab9b, f0856d6)
+
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.2.3...0.2.4
