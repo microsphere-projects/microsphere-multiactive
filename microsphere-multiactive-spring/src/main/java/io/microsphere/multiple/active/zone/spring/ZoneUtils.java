@@ -23,7 +23,6 @@ public abstract class ZoneUtils {
      */
     public static final String ZONE_LOCATOR_BEAN_NAME = "zoneLocator";
 
-
     private static final Logger logger = LoggerFactory.getLogger(ZoneUtils.class);
 
     private ZoneUtils() {
