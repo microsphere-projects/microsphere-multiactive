@@ -68,7 +68,6 @@ public class CustomizedLoadBalancerClientConfiguration {
         }
     }
 
-
     @ConditionalOnBlockingDiscoveryEnabled
     @Order(193827466)
     static class BlockingConfiguration {
@@ -90,7 +89,6 @@ public class CustomizedLoadBalancerClientConfiguration {
     public ZonePreferenceFilter<ServiceInstance> zonePreferenceFilter(ZoneContext zoneContext) {
         return new ZonePreferenceFilter<ServiceInstance>(zoneContext, new CloudServerZoneResolver());
     }
-
 
     static class OptimizedZoneConfigurationCondition implements Condition {
 
