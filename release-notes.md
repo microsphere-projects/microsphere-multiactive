@@ -108,4 +108,21 @@ For the full changelog, refer to the [changelog](LINK_TO_CHANGELOG).
 - Removed redundant line separators in code as part of cleanup. (#8d6b8e0)
 ```
 
-**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.1.3...0.1.4
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.1.3...0.1.4## v0.1.5
+
+# Release Notes - Version 0.1.5
+
+## Dependency Updates
+- Bumped Microsphere Spring Cloud to `0.1.15` ([c8fba5d](#)).
+
+## Documentation
+- Updated version numbers in `README.md` for better alignment ([d404582](#)).
+
+## Other Changes
+- Bumped version to the next patch following the release of `0.1.4` ([814e592](#)).
+
+---
+
+*No new features or bug fixes introduced in this release.*
+
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.1.4...0.1.5
