@@ -125,4 +125,20 @@ For the full changelog, refer to the [changelog](LINK_TO_CHANGELOG).
 
 *No new features or bug fixes introduced in this release.*
 
-**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.1.4...0.1.5
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.1.4...0.1.5## v0.1.6
+
+# Release Notes: Version 0.1.6
+
+## Documentations
+- Updated `README.md` to reflect branch version updates and improve clarity. ([#18](https://github.com/mercyblitz/dev-1.x), [#19](https://github.com/mercyblitz/dev-1.x))
+
+## Dependency Updates
+- Upgraded `microsphere-spring-cloud` parent dependency to version `0.1.16`. ([41f2e31](https://github.com/...))
+
+## Build and Workflow Enhancements
+- Bumped branch versions to prepare for the next development cycle. ([af0219d](https://github.com/...))
+- Incremented patch version post-release of `0.1.5`. ([3452b1d](https://github.com/...)) 
+
+---
+
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.1.5...0.1.6
