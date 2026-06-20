@@ -25,9 +25,9 @@ public class ZoneContextChangedEvent extends ApplicationContextEvent {
     /**
      * Create a new ContextStartedEvent.
      *
-     * @param context the {@code ApplicationContext} that the event is raised for (must not be
-     *        {@code null})
-     * @param zoneContext {@link ZoneContext}
+     * @param context              the {@code ApplicationContext} that the event is raised for (must not be
+     *                             {@code null})
+     * @param zoneContext          {@link ZoneContext}
      * @param propertyChangeEvents {@link PropertyChangeEvent} List
      */
     public ZoneContextChangedEvent(ApplicationContext context, ZoneContext zoneContext, List<PropertyChangeEvent> propertyChangeEvents) {
