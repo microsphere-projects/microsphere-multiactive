@@ -108,4 +108,21 @@ No new features, bug fixes, documentations, or test improvements were introduced
   - `main` into `release`. ([53de7a7](#), [94def6d](#))
   - `release` into `main`. ([5c8d6c4](#))
 
-**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.2.4...0.2.5
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.2.4...0.2.5## v0.2.6
+
+# Release Notes - Version 0.2.6
+
+## Documentation
+- Updated README for improved clarity and accuracy.  
+  - Adjusted branch references to reflect the latest versions.  
+  - Bumped displayed version to 0.2.16.  
+
+## Build and Workflow Enhancements
+- Merged `main` into release branch to ensure alignment.  
+- Updated versioning to prepare for patch release after 0.2.5.  
+
+---
+
+**Note**: No functional changes introduced in this release.  
+
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.2.5...0.2.6
