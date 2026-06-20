@@ -1,6 +1,5 @@
 package io.microsphere.multiple.active.zone.spring.event;
 
-import io.microsphere.multiple.active.zone.ZoneConstants;
 import io.microsphere.multiple.active.zone.ZoneContext;
 import io.microsphere.multiple.active.zone.spring.CompositeZoneLocator;
 import io.microsphere.multiple.active.zone.spring.DefaultZoneLocator;
@@ -9,12 +8,10 @@ import io.microsphere.multiple.active.zone.spring.ZoneUtils;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.springframework.context.ApplicationEvent;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.context.support.GenericApplicationContext;
 import org.springframework.core.env.MapPropertySource;
 
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
@@ -64,7 +61,7 @@ class ZoneContextChangedListenerTest {
         // Add properties
         if (props != null && !props.isEmpty()) {
             ctx.getEnvironment().getPropertySources()
-               .addFirst(new MapPropertySource("test-props", props));
+                    .addFirst(new MapPropertySource("test-props", props));
         }
 
         ctx.refresh();
@@ -174,7 +171,7 @@ class ZoneContextChangedListenerTest {
         );
         ctx.getBeanFactory().registerSingleton(ZoneUtils.ZONE_LOCATOR_BEAN_NAME, locator);
         ctx.getEnvironment().getPropertySources()
-           .addFirst(new MapPropertySource("test-props", props));
+                .addFirst(new MapPropertySource("test-props", props));
 
         // Add listener to capture ZoneContextChangedEvent before refresh
         ctx.addApplicationListener(event -> {
@@ -327,7 +324,7 @@ class ZoneContextChangedListenerTest {
         };
         ctx.getBeanFactory().registerSingleton(ZoneUtils.ZONE_LOCATOR_BEAN_NAME, unsupportedLocator);
         ctx.getEnvironment().getPropertySources()
-           .addFirst(new MapPropertySource("test-props", props));
+                .addFirst(new MapPropertySource("test-props", props));
 
         ctx.refresh();
 

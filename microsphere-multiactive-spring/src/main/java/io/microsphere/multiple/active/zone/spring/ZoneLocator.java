@@ -15,7 +15,7 @@ public interface ZoneLocator {
      *
      * @param environment {@link Environment}
      * @return if <code>true</code>, {@link #locate(Environment)} will be invoked, or invocation will be
-     *         ignored.
+     * ignored.
      */
     boolean supports(Environment environment);
 
