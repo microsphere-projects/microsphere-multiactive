@@ -1,7 +1,6 @@
 package io.microsphere.multiple.active.zone;
 
 import io.microsphere.logging.Logger;
-import io.microsphere.logging.LoggerFactory;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -10,6 +9,7 @@ import java.net.URL;
 import java.net.URLConnection;
 
 import static io.microsphere.io.IOUtils.copyToString;
+import static io.microsphere.logging.LoggerFactory.getLogger;
 import static io.microsphere.util.StringUtils.isNotBlank;
 import static java.nio.charset.StandardCharsets.UTF_8;
 
@@ -21,7 +21,7 @@ import static java.nio.charset.StandardCharsets.UTF_8;
  */
 public abstract class HttpUtils {
 
-    private static final Logger logger = LoggerFactory.getLogger(HttpUtils.class);
+    private static final Logger logger = getLogger(HttpUtils.class);
 
     /**
      * Retrieve a representation by doing a GET on the specified URL. The response (if any) is returned.

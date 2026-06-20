@@ -1,7 +1,6 @@
 package io.microsphere.multiple.active.zone;
 
 import io.microsphere.logging.Logger;
-import io.microsphere.logging.LoggerFactory;
 
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
@@ -9,6 +8,7 @@ import java.util.Objects;
 import java.util.StringJoiner;
 
 import static io.microsphere.constants.SymbolConstants.COMMA;
+import static io.microsphere.logging.LoggerFactory.getLogger;
 import static io.microsphere.multiple.active.zone.ZoneConstants.CURRENT_ZONE_PROPERTY_NAME;
 import static io.microsphere.multiple.active.zone.ZoneConstants.DEFAULT_PREFERENCE_UPSTREAM_DISABLED_ZONE;
 import static io.microsphere.multiple.active.zone.ZoneConstants.DEFAULT_PREFERENCE_UPSTREAM_SAME_ZONE_MIN_AVAILABLE;
@@ -29,7 +29,7 @@ import static io.microsphere.util.StringUtils.trimAllWhitespace;
  */
 public class ZoneContext {
 
-    private static final Logger logger = LoggerFactory.getLogger(ZoneContext.class);
+    private static final Logger logger = getLogger(ZoneContext.class);
 
     private static final ZoneContext instance = new ZoneContext();
 
