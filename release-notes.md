@@ -141,4 +141,22 @@ For the full changelog, refer to the [changelog](LINK_TO_CHANGELOG).
 
 ---
 
-**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.1.5...0.1.6
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.1.5...0.1.6## v0.1.7
+
+# Release Notes for Version 0.1.7
+
+## Dependency Updates
+- Upgraded `microsphere-spring-cloud` to version **0.1.19**. (Commit: `ff87648`)
+
+## Documentation
+- Updated README to reflect the latest branch versions. (Commit: `b99f800`)
+
+## Other Changes
+- Integrated changes from `release-1.x` into `dev-1.x`. (Commits: `0de249d`, `a2d2284`, `79406d2`)
+- Post-release version updated for patch release development. (Commit: `29198af`)
+
+---
+
+**Full Changelog**: Available in version control repository.
+
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.1.6...0.1.7
