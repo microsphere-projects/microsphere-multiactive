@@ -1,0 +1,11 @@
+microsphere:
+  spring:
+    cloud:
+      features:
+        named:
+          microsphere-multiactive-netflix:
+            - io.microsphere.multiple.active.zone.netflix.eureka.EurekaInstanceInfoZoneResolver
+            - io.microsphere.multiple.active.zone.netflix.eureka.ZoneAttachmentPreRegistrationHandler
+            - io.microsphere.multiple.active.zone.netflix.ribbon.RibbonServerZoneResolver
+            - io.microsphere.multiple.active.zone.netflix.ribbon.ZonePreferenceServerListFilter
+            - io.microsphere.multiple.active.zone.netflix.spring.cloud.ribbon.DiscoveryClientServerList

@@ -1,9 +1,10 @@
 package io.microsphere.multiple.active.zone.spring;
 
 import io.microsphere.logging.Logger;
-import io.microsphere.logging.LoggerFactory;
 import org.springframework.beans.factory.BeanNameAware;
 import org.springframework.core.Ordered;
+
+import static io.microsphere.logging.LoggerFactory.getLogger;
 
 /**
  * The abstract implementation {@link ZoneLocator}
@@ -13,7 +14,7 @@ import org.springframework.core.Ordered;
  */
 public abstract class AbstractZoneLocator implements ZoneLocator, BeanNameAware, Ordered {
 
-    protected final Logger logger = LoggerFactory.getLogger(getClass());
+    protected final Logger logger = getLogger(getClass());
 
     protected String beanName;
 

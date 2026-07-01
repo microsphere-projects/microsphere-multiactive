@@ -1,13 +1,13 @@
 package io.microsphere.multiple.active.zone;
 
 import io.microsphere.logging.Logger;
-import io.microsphere.logging.LoggerFactory;
 
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Objects;
 
 import static io.microsphere.constants.SymbolConstants.COMMA_CHAR;
+import static io.microsphere.logging.LoggerFactory.getLogger;
 import static io.microsphere.multiple.active.zone.ZoneConstants.DEFAULT_ZONE;
 import static io.microsphere.multiple.active.zone.ZoneConstants.PREFERENCE_ENABLED_PROPERTY_NAME;
 import static io.microsphere.multiple.active.zone.ZoneConstants.ZONE_ENABLED_PROPERTY_NAME;
@@ -22,7 +22,7 @@ import static io.microsphere.util.StringUtils.split;
  */
 public class ZonePreferenceFilter<E> {
 
-    private final static Logger logger = LoggerFactory.getLogger(ZonePreferenceFilter.class);
+    private final static Logger logger = getLogger(ZonePreferenceFilter.class);
 
     private final ZoneContext zoneContext;
 

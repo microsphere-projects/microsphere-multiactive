@@ -1,9 +1,10 @@
 package io.microsphere.multiple.active.zone.spring;
 
 import io.microsphere.logging.Logger;
-import io.microsphere.logging.LoggerFactory;
 import io.microsphere.multiple.active.zone.ZoneContext;
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
+
+import static io.microsphere.logging.LoggerFactory.getLogger;
 
 /**
  * The utilities class for Zone
@@ -23,7 +24,7 @@ public abstract class ZoneUtils {
      */
     public static final String ZONE_LOCATOR_BEAN_NAME = "zoneLocator";
 
-    private static final Logger logger = LoggerFactory.getLogger(ZoneUtils.class);
+    private static final Logger logger = getLogger(ZoneUtils.class);
 
     private ZoneUtils() {
     }
