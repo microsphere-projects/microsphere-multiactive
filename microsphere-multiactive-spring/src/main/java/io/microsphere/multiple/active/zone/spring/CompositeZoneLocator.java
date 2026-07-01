@@ -1,7 +1,6 @@
 package io.microsphere.multiple.active.zone.spring;
 
 import io.microsphere.logging.Logger;
-import io.microsphere.logging.LoggerFactory;
 import org.springframework.core.annotation.AnnotationAwareOrderComparator;
 import org.springframework.core.env.Environment;
 import org.springframework.util.Assert;
@@ -10,6 +9,7 @@ import org.springframework.util.StringUtils;
 import java.util.ArrayList;
 import java.util.List;
 
+import static io.microsphere.logging.LoggerFactory.getLogger;
 import static io.microsphere.multiple.active.zone.ZoneConstants.CURRENT_ZONE_PROPERTY_NAME;
 import static io.microsphere.multiple.active.zone.ZoneConstants.DEFAULT_LOCATOR_FAST_FAIL;
 import static io.microsphere.multiple.active.zone.ZoneConstants.LOCATOR_FAST_FAIL_PROPERTY_NAME;
@@ -22,7 +22,7 @@ import static io.microsphere.multiple.active.zone.ZoneConstants.LOCATOR_FAST_FAI
  */
 public class CompositeZoneLocator implements ZoneLocator {
 
-    private static final Logger logger = LoggerFactory.getLogger(CompositeZoneLocator.class);
+    private static final Logger logger = getLogger(CompositeZoneLocator.class);
 
     private final List<ZoneLocator> zoneLocators;
 

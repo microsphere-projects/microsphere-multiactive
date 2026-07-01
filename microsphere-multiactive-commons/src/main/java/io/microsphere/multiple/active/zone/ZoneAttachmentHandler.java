@@ -1,10 +1,10 @@
 package io.microsphere.multiple.active.zone;
 
 import io.microsphere.logging.Logger;
-import io.microsphere.logging.LoggerFactory;
 
 import java.util.Map;
 
+import static io.microsphere.logging.LoggerFactory.getLogger;
 import static io.microsphere.multiple.active.zone.ZoneConstants.ZONE_PROPERTY_NAME;
 import static io.microsphere.util.StringUtils.isNotBlank;
 
@@ -17,7 +17,7 @@ import static io.microsphere.util.StringUtils.isNotBlank;
  */
 public class ZoneAttachmentHandler {
 
-    private static final Logger logger = LoggerFactory.getLogger(ZoneAttachmentHandler.class);
+    private static final Logger logger = getLogger(ZoneAttachmentHandler.class);
 
     private final ZoneContext zoneContext;
 

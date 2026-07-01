@@ -13,7 +13,6 @@ import static io.microsphere.multiple.active.zone.ZoneConstants.LOCATOR_TIMEOUT_
 /**
  * Amazon EC2 Availability Zone Endpoint {@link ZoneLocator}
  *
- *
  * @author <a href="mailto:mercyblitz@gmail.com">Mercy<a/>
  * @see ZoneLocator
  * @since 1.0.0

@@ -1,7 +1,6 @@
 package io.microsphere.multiple.active.zone.spring.event;
 
 import io.microsphere.logging.Logger;
-import io.microsphere.logging.LoggerFactory;
 import io.microsphere.multiple.active.zone.ZoneConstants;
 import io.microsphere.multiple.active.zone.ZoneContext;
 import io.microsphere.multiple.active.zone.spring.ZoneLocator;
@@ -24,6 +23,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.function.Consumer;
 
+import static io.microsphere.logging.LoggerFactory.getLogger;
 import static io.microsphere.multiple.active.zone.ZoneConstants.DEFAULT_PREFERENCE_UPSTREAM_DISABLED_ZONE;
 import static io.microsphere.multiple.active.zone.ZoneConstants.DEFAULT_PREFERENCE_UPSTREAM_SAME_ZONE_MIN_AVAILABLE;
 import static io.microsphere.multiple.active.zone.ZoneConstants.DEFAULT_PREFERENCE_UPSTREAM_ZONE_READY_PERCENTAGE;
@@ -57,7 +57,7 @@ public class ZoneContextChangedListener implements SmartApplicationListener, App
 
     private static final Class<ZoneContextChangedListener> CURRENT_CLASS = ZoneContextChangedListener.class;
 
-    private static final Logger logger = LoggerFactory.getLogger(CURRENT_CLASS);
+    private static final Logger logger = getLogger(CURRENT_CLASS);
 
     private static final ClassLoader classLoader = getClassLoader(CURRENT_CLASS);
 

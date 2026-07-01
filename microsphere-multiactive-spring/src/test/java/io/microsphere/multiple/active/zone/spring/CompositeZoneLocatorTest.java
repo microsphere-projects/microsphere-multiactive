@@ -3,13 +3,11 @@ package io.microsphere.multiple.active.zone.spring;
 import org.junit.jupiter.api.Test;
 import org.springframework.core.env.Environment;
 import org.springframework.core.env.MapPropertySource;
-import org.springframework.core.env.MutablePropertySources;
 import org.springframework.core.env.StandardEnvironment;
 
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import static io.microsphere.multiple.active.zone.ZoneConstants.LOCATOR_FAST_FAIL_PROPERTY_NAME;
@@ -25,7 +23,9 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
  */
 class CompositeZoneLocatorTest {
 
-    /** Always supports and returns a fixed zone */
+    /**
+     * Always supports and returns a fixed zone
+     */
     static ZoneLocator fixedLocator(String zone) {
         return new ZoneLocator() {
             @Override
@@ -45,7 +45,9 @@ class CompositeZoneLocatorTest {
         };
     }
 
-    /** Never supports */
+    /**
+     * Never supports
+     */
     static ZoneLocator unsupportedLocator() {
         return new ZoneLocator() {
             @Override
@@ -60,7 +62,9 @@ class CompositeZoneLocatorTest {
         };
     }
 
-    /** Supports but returns null */
+    /**
+     * Supports but returns null
+     */
     static ZoneLocator nullLocator() {
         return new ZoneLocator() {
             @Override
@@ -75,7 +79,9 @@ class CompositeZoneLocatorTest {
         };
     }
 
-    /** Supports but throws */
+    /**
+     * Supports but throws
+     */
     static ZoneLocator throwingLocator() {
         return new ZoneLocator() {
             @Override
@@ -152,6 +158,7 @@ class CompositeZoneLocatorTest {
         String zone = composite.locate(newEnvironment());
         assertNull(zone);
     }
+
     @Test
     void testLocateSkipsUnsupportedLocators() {
         CompositeZoneLocator composite = new CompositeZoneLocator(

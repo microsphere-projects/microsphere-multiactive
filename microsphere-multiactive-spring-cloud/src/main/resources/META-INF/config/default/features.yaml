@@ -1,0 +1,15 @@
+microsphere:
+  spring:
+    cloud:
+      features:
+        named:
+          microsphere-multiactive-commons:
+            - io.microsphere.multiple.active.zone.ZoneAttachmentHandler
+            - io.microsphere.multiple.active.zone.ZoneContext
+            - io.microsphere.multiple.active.zone.ZonePreferenceFilter
+            - io.microsphere.multiple.active.zone.ZoneResolver
+          microsphere-multiactive-spring:
+            - io.microsphere.multiple.active.zone.spring.ZoneLocator
+            - io.microsphere.multiple.active.zone.spring.event.ZoneContextChangedListener
+          microsphere-multiactive-spring-cloud:
+            - WebEndpointApplicationContextInitializer=io.microsphere.spring.cloud.gateway.server.webmvc.context.WebEndpointApplicationContextInitializer
