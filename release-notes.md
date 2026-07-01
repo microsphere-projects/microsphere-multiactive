@@ -180,4 +180,24 @@ For the full changelog, refer to the [changelog](LINK_TO_CHANGELOG).
 
 **Full Changelog:** [0.1.7...0.1.8](https://github.com/mercyblitz/dev-1.x/compare/0.1.7...0.1.8)
 
-**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.1.7...0.1.8
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.1.7...0.1.8## v0.1.9
+
+# Release Notes - Version 0.1.9
+
+## Dependency Updates
+- Bumped `microsphere-spring-cloud` to version **0.1.21**. ([5daa505](https://example.com/commit/5daa505))
+
+## Documentation
+- Updated branch version numbers in the `README` for clarity. ([1d69fc5](https://example.com/commit/1d69fc5))
+
+## Build and Workflow Enhancements
+- Merged changes from `release-1.x` into `dev-1.x` for consistency. ([0b3b0dd](https://example.com/commit/0b3b0dd))
+- Set up `dev-1.x` branch with latest updates from the upstream project. ([fd748ce](https://example.com/commit/fd748ce))
+
+## Other Changes
+- Bumped version to the next patch level post-`0.1.8` release. ([2400881](https://example.com/commit/2400881))
+
+--- 
+**Note:** Internal refactors and merges for improved development workflows.  
+
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.1.8...0.1.9
