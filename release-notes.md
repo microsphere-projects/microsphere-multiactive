@@ -140,4 +140,24 @@ No new features, bug fixes, documentations, or test improvements were introduced
 - Maintenance merges between `main` and `release` branches. 
 - Updated versioning post-`0.2.6` release. 
 
-**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.2.6...0.2.7
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.2.6...0.2.7## v0.2.8
+
+# Release Notes - Version 0.2.8
+
+## New Features
+- Add default feature mappings for improved configuration flexibility. ([d2903ab](https://github.com/your-repo/commit/d2903ab))
+
+## Dependency Updates
+- Bump Spring Cloud parent version to `0.2.20` for compatibility updates. ([7aabb95](https://github.com/your-repo/commit/7aabb95))
+
+## Documentations
+- Update README to reflect new release versions. ([be85cd9](https://github.com/your-repo/commit/be85cd9))
+
+## Build and Workflow Enhancements
+- Merged main branch changes into the release branch for synchronization. ([50413cd](https://github.com/your-repo/commit/50413cd), [1d24d51](https://github.com/your-repo/commit/1d24d51), [74a5840](https://github.com/your-repo/commit/74a5840))
+- Bump version to next patch after publishing `0.2.7`. ([29ca7a4](https://github.com/your-repo/commit/29ca7a4))
+- Merged release branch back into main for final updates. ([c3558a8](https://github.com/your-repo/commit/c3558a8))
+
+--- 
+
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.2.7...0.2.8
