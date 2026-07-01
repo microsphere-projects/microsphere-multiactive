@@ -7,7 +7,6 @@ import org.junit.jupiter.api.Test;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
@@ -18,7 +17,9 @@ import static org.junit.jupiter.api.Assertions.assertSame;
  */
 class ZonePreferenceFilterTest {
 
-    /** Simple entity wrapping a zone label */
+    /**
+     * Simple entity wrapping a zone label
+     */
     static class ZoneEntity {
         final String zone;
 
@@ -32,7 +33,9 @@ class ZonePreferenceFilterTest {
         }
     }
 
-    /** Resolver that returns the entity's zone field */
+    /**
+     * Resolver that returns the entity's zone field
+     */
     private final ZoneResolver<ZoneEntity> resolver = entity -> entity == null ? null : entity.zone;
 
     private ZoneContext zoneContext;

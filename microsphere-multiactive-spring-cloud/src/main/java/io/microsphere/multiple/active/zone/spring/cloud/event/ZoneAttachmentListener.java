@@ -15,8 +15,8 @@ import java.util.Map;
  * A listener for the {@link InstancePreRegisteredEvent instance pre-registered event} to attach to
  * the zone.
  *
- * @see ZoneContext
  * @author <a href="mailto:mercyblitz@gmail.com">Mercy<a/>
+ * @see ZoneContext
  * @since 1.0.0
  */
 public class ZoneAttachmentListener implements ApplicationListener<InstancePreRegisteredEvent>, ApplicationContextAware {
