@@ -160,4 +160,21 @@ No new features, bug fixes, documentations, or test improvements were introduced
 
 --- 
 
-**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.2.7...0.2.8
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.2.7...0.2.8## v0.2.9
+
+# Release Notes for v0.2.9
+
+## Dependency Updates
+- Bumped `microsphere-spring-cloud` to version **0.2.21**. (_e3563c2_)
+
+## Documentation
+- Updated `README` to reflect accurate branch version numbers. (_c8e1375_)
+
+## Build and Workflow Enhancements
+- Merged `main` into `release`. (_2619f70_)
+- Merged `release` into `main`. (_a1fe87f_)
+- Bumped version to next patch after publishing v0.2.8. (_7466b3f_)
+
+---
+
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.2.8...0.2.9

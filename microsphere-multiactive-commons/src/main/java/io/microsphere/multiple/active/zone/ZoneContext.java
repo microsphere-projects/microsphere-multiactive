@@ -198,7 +198,7 @@ public class ZoneContext {
             propertyChangeSupport.firePropertyChange(propertyName, previousPropertyValue, newPropertyValue);
             logger.info("The property value [name : '{}'] is changed from '{}' to '{}'", propertyName, previousPropertyValue, newPropertyValue);
         } else {
-            logger.debug("The property value [name : '{}'] is not changed : '{}'", propertyName, previousPropertyValue);
+            logger.trace("The property value [name : '{}'] is not changed : '{}'", propertyName, previousPropertyValue);
         }
         return changed;
     }
