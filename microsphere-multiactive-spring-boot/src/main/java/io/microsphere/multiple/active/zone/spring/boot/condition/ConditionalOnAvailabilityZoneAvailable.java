@@ -28,8 +28,10 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-import static io.microsphere.multiple.active.zone.ZoneConstants.ENABLED_PROPERTY_NAME_SUFFIX;
-import static io.microsphere.multiple.active.zone.ZoneConstants.ZONE_PROPERTY_NAME;
+import static io.microsphere.multiple.active.zone.ZoneConstants.ZONE_ENABLED_PROPERTY_NAME;
+import static java.lang.annotation.ElementType.METHOD;
+import static java.lang.annotation.ElementType.TYPE;
+import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
 /**
  * {@link @Conditional} that checks if zone is enabled
@@ -38,13 +40,13 @@ import static io.microsphere.multiple.active.zone.ZoneConstants.ZONE_PROPERTY_NA
  * @see Conditional
  * @since 1.0.0
  */
-@Retention(RetentionPolicy.RUNTIME)
-@Target({ElementType.TYPE, ElementType.METHOD})
+@Retention(RUNTIME)
+@Target({TYPE, METHOD})
 @Documented
 @ConditionalOnClass(value = {
-        ZoneContext.class, // from "microsphere-multiactive-commons"
-        ZoneLocator.class, // from microsphere-multiactive-spring
+        ZoneContext.class,                  // Microsphere Multi-Active Commons
+        ZoneLocator.class,                  // Microsphere Multi-Active Spring
 })
-@ConditionalOnProperty(prefix = ZONE_PROPERTY_NAME, name = ENABLED_PROPERTY_NAME_SUFFIX)
+@ConditionalOnProperty(name = ZONE_ENABLED_PROPERTY_NAME, matchIfMissing = true)
 public @interface ConditionalOnEnabledZone {
 }
