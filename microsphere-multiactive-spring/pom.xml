@@ -20,7 +20,7 @@
 
     <dependencies>
 
-        <!-- Microsphere -->
+        <!-- Microsphere Multi-Active Commons  -->
         <dependency>
             <groupId>io.github.microsphere-projects</groupId>
             <artifactId>microsphere-multiactive-commons</artifactId>
