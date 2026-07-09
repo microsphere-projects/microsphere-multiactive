@@ -1,7 +1,7 @@
 package io.microsphere.multiple.active.zone.spring.cloud.autoconfigure;
 
 import io.microsphere.multiple.active.zone.ZoneAttachmentHandler;
-import io.microsphere.multiple.active.zone.spring.boot.condition.ConditionalOnEnabledZone;
+import io.microsphere.multiple.active.zone.spring.boot.condition.ConditionalOnAvailabilityZoneAvailable;
 import io.microsphere.multiple.active.zone.spring.cloud.event.ZoneAttachmentListener;
 import org.springframework.boot.autoconfigure.AutoConfigureAfter;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
@@ -17,7 +17,7 @@ import org.springframework.context.annotation.Import;
  * @since 1.0.0
  */
 @Configuration
-@ConditionalOnEnabledZone
+@ConditionalOnAvailabilityZoneAvailable
 @Import(value = {ZoneAttachmentHandler.class})
 @AutoConfigureAfter(name = {"org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration"})
 public class ZoneAutoConfiguration {
