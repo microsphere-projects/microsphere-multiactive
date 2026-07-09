@@ -73,7 +73,7 @@ public class CompositeZoneLocator implements ZoneLocator {
                         }
                     }
                 } else {
-                    logger.debug("{} does not support to locate the zone", zoneLocator);
+                    logger.trace("{} does not support to locate the zone", zoneLocator);
                 }
             } catch (Throwable e) {
                 logger.error("{} failed to locate the zone", zoneLocator, e);

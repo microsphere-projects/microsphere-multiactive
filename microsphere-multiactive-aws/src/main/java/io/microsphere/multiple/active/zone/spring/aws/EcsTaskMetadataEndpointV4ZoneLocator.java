@@ -64,7 +64,7 @@ public class EcsTaskMetadataEndpointV4ZoneLocator extends AbstractZoneLocator im
                 logger.error("Request Amazon ECS Task metadata endpoint version 4 [URL : '{}'] failed", taskURL, e);
             }
         } else {
-            logger.debug("The environment variable [name : '{}' ] of Amazon ECS Task metadata endpoint version 4 can't be found",
+            logger.trace("The environment variable [name : '{}' ] of Amazon ECS Task metadata endpoint version 4 can't be found",
                     METADATA_URI_V4_ENV_NAME);
         }
         return zone;
