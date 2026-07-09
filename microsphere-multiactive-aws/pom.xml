@@ -27,7 +27,7 @@
             <optional>true</optional>
         </dependency>
 
-        <!-- Microsphere -->
+        <!-- Microsphere Multi-Active Spring Cloud -->
         <dependency>
             <groupId>io.github.microsphere-projects</groupId>
             <artifactId>microsphere-multiactive-spring-cloud</artifactId>
