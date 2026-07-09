@@ -41,7 +41,7 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 @Documented
 @ConditionalOnClass(value = {
         ZoneContext.class,                  // Microsphere Multi-Active Commons
-        ZoneLocator.class,                  // Microsphere Multi-Active Spring
+        ZoneLocator.class                   // Microsphere Multi-Active Spring
 })
 @ConditionalOnAvailabilityZoneEnabled
 public @interface ConditionalOnAvailabilityZoneAvailable {
