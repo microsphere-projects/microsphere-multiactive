@@ -73,6 +73,13 @@
             <optional>true</optional>
         </dependency>
 
+        <!-- Jackson -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <optional>true</optional>
+        </dependency>
+
         <!-- Testing -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -93,7 +100,7 @@
             <artifactId>microsphere-spring-boot-test</artifactId>
             <scope>test</scope>
         </dependency>
-        
+
         <!-- Logback -->
         <dependency>
             <groupId>ch.qos.logback</groupId>
