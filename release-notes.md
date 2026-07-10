@@ -177,4 +177,36 @@ No new features, bug fixes, documentations, or test improvements were introduced
 
 ---
 
-**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.2.8...0.2.9
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.2.8...0.2.9## v0.2.10
+
+# Release Notes - Version 0.2.10
+
+## New Features
+- Added zone cloud auto-configuration integration test. ([f169be1](#))
+- Enhanced availability-zone condition annotations and tests. ([68daaf2](#))
+- Introduced zone constants annotations and associated tests. ([a9b4cad](#))
+
+## Dependency Updates
+- Upgraded `microsphere-spring-cloud` to 0.2.23. ([2c18604](#))
+- Updated Spring Boot, Spring Cloud, Netflix, and AWS module dependencies for better alignment and optionality. ([73802c6](#), [55a3da1](#), [6842850](#), [8046780](#))
+- Added optional Jackson dependency to the AWS module. ([195b3fd](#))
+- Removed redundant SLF4J API dependency. ([09cba96](#))
+
+## Test Improvements
+- Refined test dependencies across various modules for efficiency and clarity. ([02f6f3c](#), [14c6091](#), [8046780](#))
+- Added `spring-test` dependency for improved unit testing coverage. ([0efd0d5](#))
+- Cleaned up and enhanced Spring Boot test class list syntax. ([73802c6](#))
+- Simplified environment type in listener test. ([07b6993](#))
+
+## Bug Fixes
+- Downgraded non-critical zone logs to `trace` for noise reduction. ([39d91fd](#))
+- Fixed trailing comma in class condition definition. ([74b29fb](#))
+
+## Build and Workflow Enhancements
+- Updated version numbers in `README.md`. ([2a633e3](#))
+
+---
+
+For a full list of changes, refer to the [Full Changelog](#).
+
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.2.9...0.2.10
