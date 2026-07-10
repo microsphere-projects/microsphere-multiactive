@@ -16,20 +16,17 @@
  */
 package io.microsphere.multiple.active.zone.spring.boot.condition;
 
-import io.microsphere.multiple.active.zone.ZoneContext;
-import io.microsphere.multiple.active.zone.spring.ZoneLocator;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Conditional;
 
 import java.lang.annotation.Documented;
-import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-import static io.microsphere.multiple.active.zone.ZoneConstants.ENABLED_PROPERTY_NAME_SUFFIX;
-import static io.microsphere.multiple.active.zone.ZoneConstants.ZONE_PROPERTY_NAME;
+import static io.microsphere.multiple.active.zone.ZoneConstants.ZONE_ENABLED_PROPERTY_NAME;
+import static java.lang.annotation.ElementType.METHOD;
+import static java.lang.annotation.ElementType.TYPE;
+import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
 /**
  * {@link @Conditional} that checks if zone is enabled
@@ -38,13 +35,9 @@ import static io.microsphere.multiple.active.zone.ZoneConstants.ZONE_PROPERTY_NA
  * @see Conditional
  * @since 1.0.0
  */
-@Retention(RetentionPolicy.RUNTIME)
-@Target({ElementType.TYPE, ElementType.METHOD})
+@Retention(RUNTIME)
+@Target({TYPE, METHOD})
 @Documented
-@ConditionalOnClass(value = {
-        ZoneContext.class, // from "microsphere-multiactive-commons"
-        ZoneLocator.class, // from microsphere-multiactive-spring
-})
-@ConditionalOnProperty(prefix = ZONE_PROPERTY_NAME, name = ENABLED_PROPERTY_NAME_SUFFIX)
-public @interface ConditionalOnEnabledZone {
+@ConditionalOnProperty(name = ZONE_ENABLED_PROPERTY_NAME, matchIfMissing = true)
+public @interface ConditionalOnAvailabilityZoneEnabled {
 }

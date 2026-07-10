@@ -44,13 +44,13 @@ public class ZonePreferenceFilter<E> {
 
         // Disabled case
         if (!zoneContext.isEnabled()) {
-            logger.debug("Zone Context feature is disabled! It could be enabled if the Spring property '{}' to be set 'true'",
+            logger.trace("Zone Context feature is disabled! It could be enabled if the Spring property '{}' to be set 'true'",
                     ZONE_ENABLED_PROPERTY_NAME);
             return entities;
         }
 
         if (!zoneContext.isPreferenceEnabled()) {
-            logger.debug("Zone Preference feature is disabled as default! It could be enabled if the Spring property '{}' to be set 'true'",
+            logger.trace("Zone Preference feature is disabled as default! It could be enabled if the Spring property '{}' to be set 'true'",
                     PREFERENCE_ENABLED_PROPERTY_NAME);
             return entities;
         }
@@ -58,7 +58,7 @@ public class ZonePreferenceFilter<E> {
         // Ignored case
         final String zone = zoneContext.getZone();
         if (isIgnored(zone)) {
-            logger.debug("Zone Preference feature will be ignored, caused by zone : '{}'", zone);
+            logger.trace("Zone Preference feature will be ignored, caused by zone : '{}'", zone);
             return entities;
         }
 
@@ -72,7 +72,7 @@ public class ZonePreferenceFilter<E> {
             int currentSize = targetEntities.size();
 
             if (currentSize <= 1) { // Not enough entity available
-                logger.debug("Not enough entity available after disabled zone['{}'] filter, " + "the entities' total size : {} -> actual size : {}",
+                logger.trace("Not enough entity available after disabled zone['{}'] filter, " + "the entities' total size : {} -> actual size : {}",
                         disabledZone, totalSize, currentSize);
                 return entities;
             }
@@ -101,7 +101,7 @@ public class ZonePreferenceFilter<E> {
         // Upstream entities ready case
         int upstreamReadyPercentage = zoneContext.getPreferenceUpstreamZoneReadyPercentage();
         if (isUpstreamZoneNotReady(zoneCount, totalSize, upstreamReadyPercentage)) {
-            logger.debug("The ready percentage of entities with zone is under the threshold [{}%], total entities size : {} , "
+            logger.trace("The ready percentage of entities with zone is under the threshold [{}%], total entities size : {} , "
                     + "ready entities size : {}", upstreamReadyPercentage, totalSize, zoneCount);
             return targetEntities;
         }
@@ -112,17 +112,17 @@ public class ZonePreferenceFilter<E> {
             // The min available in the same zone threshold case
             int sameZoneMinAvailable = zoneContext.getPreferenceUpstreamSameZoneMinAvailable();
             if (isUnderSameZoneMinAvailableThreshold(sameZoneEntitiesSize, sameZoneMinAvailable)) {
-                logger.debug("The size of same zone ['{}'] entities is under the threshold : {}, actual size : {}", zone, sameZoneMinAvailable,
+                logger.trace("The size of same zone ['{}'] entities is under the threshold : {}, actual size : {}", zone, sameZoneMinAvailable,
                         sameZoneEntitiesSize);
                 return targetEntities;
             }
 
-            logger.debug("The same zone ['{}'] entities[size : {} , total : {}] are found!", zone, sameZoneEntitiesSize, totalSize);
+            logger.trace("The same zone ['{}'] entities[size : {} , total : {}] are found!", zone, sameZoneEntitiesSize, totalSize);
             return sameZoneEntities;
         }
 
         // No matched
-        logger.debug("No same zone ['{}'] entity was found, total entities size : {} , zone count : {}", zone, totalSize, zoneCount);
+        logger.trace("No same zone ['{}'] entity was found, total entities size : {} , zone count : {}", zone, totalSize, zoneCount);
         return targetEntities;
     }
 
@@ -145,7 +145,7 @@ public class ZonePreferenceFilter<E> {
             }
         }
 
-        logger.debug("After filtering the disabled zone['{}'] entities[size : {} -> {}] : {} -> {}", disabledZone, totalSize, targetEntities.size(),
+        logger.trace("After filtering the disabled zone['{}'] entities[size : {} -> {}] : {} -> {}", disabledZone, totalSize, targetEntities.size(),
                 entities, targetEntities);
         return targetEntities;
     }

@@ -200,4 +200,37 @@ For the full changelog, refer to the [changelog](LINK_TO_CHANGELOG).
 --- 
 **Note:** Internal refactors and merges for improved development workflows.  
 
-**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.1.8...0.1.9
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.1.8...0.1.9## v0.1.10
+
+# Release Notes - Version 0.1.10
+
+## New Features
+- **Zone Cloud Integration**: Added auto-configuration integration test for zone cloud. ([9307529](#))
+- **AWS Module Enhancement**: Included optional `jackson-databind` dependency. ([658824c](#))
+
+## Bug Fixes
+- Improved conditions and tests for zone auto-configuration. ([4bad41c](#))
+
+## Dependency Updates
+- Upgraded `microsphere-spring-cloud` to `0.1.23`. ([4e14c3c](#), [57e75ab](#))
+- Aligned Spring dependencies across all modules. ([edace7c](#))
+- Standardized module POM dependencies. ([7143be4](#))
+
+## Test Improvements
+- Enhanced test setup across modules for consistency. ([7143be4](#))
+
+## Build and Workflow Enhancements
+- Merged `release-1.x` into `dev-1.x`. ([da45270](#))
+- Updated version to `0.1.10` for next patch cycle. ([774ff69](#))
+
+## Documentation
+- Updated `README.md` with minor refinements. ([0b2fd1e](#))
+
+## Other Changes
+- Reduced log noise by changing debug-level logs to trace for better readability. ([f8f922e](#))
+
+---
+
+**Full Changelog**: [v0.1.9...v0.1.10](#)
+
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.1.9...0.1.10
