@@ -35,7 +35,7 @@
             <optional>true</optional>
         </dependency>
 
-        <!-- Spring Boot -->
+        <!-- Spring Boot Dependencies -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
@@ -44,13 +44,7 @@
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-            <optional>true</optional>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-webflux</artifactId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
             <optional>true</optional>
         </dependency>
 
@@ -62,7 +56,7 @@
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
+            <artifactId>spring-boot-autoconfigure-processor</artifactId>
             <optional>true</optional>
         </dependency>
 
@@ -86,13 +80,20 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- Spring Boot Test -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
         <!-- Microsphere Spring Boot Test -->
         <dependency>
             <groupId>io.github.microsphere-projects</groupId>
             <artifactId>microsphere-spring-boot-test</artifactId>
             <scope>test</scope>
         </dependency>
-
+        
         <!-- Logback -->
         <dependency>
             <groupId>ch.qos.logback</groupId>
