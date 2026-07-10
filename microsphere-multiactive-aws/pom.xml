@@ -20,7 +20,14 @@
 
     <dependencies>
 
-        <!-- Microsphere -->
+        <!-- Microsphere Annotation Processor -->
+        <dependency>
+            <groupId>io.github.microsphere-projects</groupId>
+            <artifactId>microsphere-annotation-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <!-- Microsphere Multi-Active Spring Cloud -->
         <dependency>
             <groupId>io.github.microsphere-projects</groupId>
             <artifactId>microsphere-multiactive-spring-cloud</artifactId>
@@ -28,7 +35,7 @@
             <optional>true</optional>
         </dependency>
 
-        <!-- Spring Boot -->
+        <!-- Spring Boot Dependencies -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
@@ -37,13 +44,7 @@
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-            <optional>true</optional>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-webflux</artifactId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
             <optional>true</optional>
         </dependency>
 
@@ -55,7 +56,7 @@
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
+            <artifactId>spring-boot-autoconfigure-processor</artifactId>
             <optional>true</optional>
         </dependency>
 
@@ -72,10 +73,10 @@
             <optional>true</optional>
         </dependency>
 
-        <!-- SLJ4J -->
+        <!-- Jackson -->
         <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
             <optional>true</optional>
         </dependency>
 
@@ -86,10 +87,26 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- Spring Boot Test -->
         <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <!-- Microsphere Spring Boot Test -->
+        <dependency>
+            <groupId>io.github.microsphere-projects</groupId>
+            <artifactId>microsphere-spring-boot-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Logback -->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
 </project>

@@ -67,7 +67,7 @@ public class EcsContainerMetadataFileZoneLocator extends AbstractZoneLocator {
                 logger.warn("The Amazon ECS Container metadata file [path : '{}' ] can't be read", metadataFile.getAbsolutePath());
             }
         } else {
-            logger.debug("The environment variable [name : '{}' ] of Amazon ECS container metadata file can't be found", METADATA_FILE_ENV_NAME);
+            logger.trace("The environment variable [name : '{}' ] of Amazon ECS container metadata file can't be found", METADATA_FILE_ENV_NAME);
         }
         return zone;
     }

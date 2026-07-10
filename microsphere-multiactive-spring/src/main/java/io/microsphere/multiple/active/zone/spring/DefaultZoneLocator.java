@@ -31,7 +31,7 @@ public class DefaultZoneLocator extends AbstractZoneLocator {
         if (StringUtils.hasText(zone)) {
             logger.info("The zone ['{}'] was located from the Spring Property [name: '{}']", zone, ZONE_PROPERTY_NAME);
         } else {
-            logger.debug("The property [name : '{}' ] of zone can't be found, the default value ['{}'] will be applied", ZONE_PROPERTY_NAME,
+            logger.trace("The property [name : '{}' ] of zone can't be found, the default value ['{}'] will be applied", ZONE_PROPERTY_NAME,
                     DEFAULT_ZONE);
             zone = DEFAULT_ZONE;
         }
