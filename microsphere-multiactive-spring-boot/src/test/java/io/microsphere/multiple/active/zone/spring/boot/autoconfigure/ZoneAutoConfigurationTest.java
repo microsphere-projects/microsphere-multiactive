@@ -37,7 +37,7 @@ import static org.springframework.boot.test.context.SpringBootTest.WebEnvironmen
  */
 @SpringBootTest(
         classes = {
-                ZoneAutoConfigurationTest.class,
+                ZoneAutoConfigurationTest.class
         },
         webEnvironment = NONE
 )
