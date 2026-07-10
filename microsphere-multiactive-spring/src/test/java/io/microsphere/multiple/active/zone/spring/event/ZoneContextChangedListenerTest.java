@@ -10,6 +10,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.context.support.GenericApplicationContext;
+import org.springframework.core.env.Environment;
 import org.springframework.core.env.MapPropertySource;
 
 import java.util.Collections;
@@ -313,12 +314,12 @@ class ZoneContextChangedListenerTest {
         // ZoneLocator that never supports
         ZoneLocator unsupportedLocator = new ZoneLocator() {
             @Override
-            public boolean supports(org.springframework.core.env.Environment environment) {
+            public boolean supports(Environment environment) {
                 return false;
             }
 
             @Override
-            public String locate(org.springframework.core.env.Environment environment) {
+            public String locate(Environment environment) {
                 return null;
             }
         };
