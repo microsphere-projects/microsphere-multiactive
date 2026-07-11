@@ -233,4 +233,20 @@ For the full changelog, refer to the [changelog](LINK_TO_CHANGELOG).
 
 **Full Changelog**: [v0.1.9...v0.1.10](#)
 
-**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.1.9...0.1.10
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.1.9...0.1.10## v0.1.11
+
+# Release Notes: Version 0.1.11
+
+## Dependency Updates
+- Bumped Microsphere Spring Cloud to `0.1.24`. [commit: `2a81411`]
+
+## Documentation
+- Updated branch version numbers in `README`. [commit: `49a0839`]
+
+## Build and Workflow Enhancements
+- Merged `release-1.x` into `dev-1.x` to keep branches in sync. [commit: `89345d0`]
+- Bumped version to `0.1.11` post-publishing v0.1.10. [commit: `719357f`]
+
+---
+
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.1.10...0.1.11
