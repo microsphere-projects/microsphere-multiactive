@@ -249,4 +249,16 @@ For the full changelog, refer to the [changelog](LINK_TO_CHANGELOG).
 
 ---
 
-**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.1.10...0.1.11
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.1.10...0.1.11## v0.1.12
+
+_Release notes generation failed. Raw commits since 0.1.11:_
+
+```
+7cdb4a9 Update README.md
+754c95a Merge pull request #34 from mercyblitz/dev-1.x
+bc00385 Bump microsphere-spring-cloud to 0.1.25
+ac3b85b chore: merge release-1.x into dev-1.x [skip ci]
+ee9cf98 chore: bump version to next patch after publishing 0.1.11
+```
+
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.1.11...0.1.12
