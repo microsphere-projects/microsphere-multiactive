@@ -224,4 +224,16 @@ For a full list of changes, refer to the [Full Changelog](#).
 - Merged `release` into `main`. [skip ci] ([b215d7a](#))
 - Bumped version to next patch after publishing `0.2.10`. ([e2f2cfb](#))
 
-**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.2.10...0.2.11
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.2.10...0.2.11## v0.2.12
+
+_Release notes generation failed. Raw commits since 0.2.11:_
+
+```
+250eeaf Update version numbers in README.md
+efc88ed chore: merge main into release [skip ci]
+239bb2b Bump Microsphere Spring Cloud to 0.2.25
+b68301a chore: merge release into main [skip ci]
+ae1e5d9 chore: bump version to next patch after publishing 0.2.11
+```
+
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.2.11...0.2.12
