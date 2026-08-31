@@ -236,4 +236,19 @@ b68301a chore: merge release into main [skip ci]
 ae1e5d9 chore: bump version to next patch after publishing 0.2.11
 ```
 
-**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.2.11...0.2.12
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.2.11...0.2.12## v0.2.13
+
+_Release notes generation failed. Raw commits since 0.2.12:_
+
+```
+35e2323 Update version numbers in README.md
+23350b6 chore: merge main into release [skip ci]
+6d935f5 Bump microsphere spring cloud to 0.2.26
+45ad7b2 chore: merge main into release [skip ci]
+4f5f4cb Merge pull request #35 from microsphere-projects/dependabot/maven/org.apache.maven-apache-maven-3.9.16
+2621fb7 Bump org.apache.maven:apache-maven from 3.9.15 to 3.9.16
+5bf7f4c chore: merge release into main [skip ci]
+b1d7349 chore: bump version to next patch after publishing 0.2.12
+```
+
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.2.12...0.2.13
