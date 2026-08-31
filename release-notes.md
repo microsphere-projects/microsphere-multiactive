@@ -261,4 +261,18 @@ ac3b85b chore: merge release-1.x into dev-1.x [skip ci]
 ee9cf98 chore: bump version to next patch after publishing 0.1.11
 ```
 
-**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.1.11...0.1.12
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.1.11...0.1.12## v0.1.13
+
+_Release notes generation failed. Raw commits since 0.1.12:_
+
+```
+8c29f5c Update version numbers in README.md
+1ff7e9b Merge pull request #36 from mercyblitz/dev-1.x
+31f6a3f Merge branch 'microsphere-projects:dev-1.x' into dev-1.x
+81066c6 Bump microsphere Spring Cloud to 0.1.26
+b75bd4f Add workflow to sync branches from upstream repository
+c9b449a chore: merge release-1.x into dev-1.x [skip ci]
+b1cdded chore: bump version to next patch after publishing 0.1.12
+```
+
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-multiactive/compare/0.1.12...0.1.13
