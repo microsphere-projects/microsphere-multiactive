@@ -97,6 +97,16 @@ We welcome your contributions! Please read [Code of Conduct](./CODE_OF_CONDUCT.m
 
 ## Documentation
 
+### Guides in this repository
+
+Full bilingual documentation (English by default, Chinese mirrored under each directory's `zh/` subdirectory) lives
+under [`docs/`](./docs/README.md) · [简体中文](./docs/zh/README.md), organised per release branch and per Maven module:
+
+| **Release line** | **Source branch** | **Version** | **User Guide**                                       | **Developer Guide**                                       |
+|------------------|-------------------|-------------|------------------------------------------------------|-----------------------------------------------------------|
+| current          | `release`         | 0.2.x       | [EN](./docs/current/user-guide/README.md) · [中文](./docs/current/user-guide/zh/README.md) | [EN](./docs/current/developer-guide/README.md) · [中文](./docs/current/developer-guide/zh/README.md) |
+| 1.x              | `release-1.x`     | 0.1.x       | [EN](./docs/1.x/user-guide/README.md) · [中文](./docs/1.x/user-guide/zh/README.md) | [EN](./docs/1.x/developer-guide/README.md) · [中文](./docs/1.x/developer-guide/zh/README.md) |
+
 ### User Guide
 
 [DeepWiki Host](https://deepwiki.com/microsphere-projects/microsphere-multiactive)
