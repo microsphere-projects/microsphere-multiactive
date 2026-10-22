@@ -43,6 +43,16 @@ Every release line documents the same eight Maven modules:
 | microsphere-multiactive-spring-boot  | [current](current/user-guide/microsphere-multiactive-spring-boot.md) · [1.x](1.x/user-guide/microsphere-multiactive-spring-boot.md) |
 | microsphere-multiactive-spring-cloud | [current](current/user-guide/microsphere-multiactive-spring-cloud.md) · [1.x](1.x/user-guide/microsphere-multiactive-spring-cloud.md) |
 
+## Source diffs
+
+Module-by-module comparisons of the `src/main` and `src/test` content between the latest
+release tags of the two release lines (Java version and Java EE / Jakarta EE API differences
+are excluded from the conclusions):
+
+| Tag pair | src/main (EN · 中文) | src/test (EN · 中文) |
+|----------|----------------------|----------------------|
+| 0.2.13 vs 0.1.13 | [main-diff-0.2.13-vs-0.1.13.md](diff/source/main-diff-0.2.13-vs-0.1.13.md) · [中文](diff/source/main-diff-0.2.13-vs-0.1.13.zh.md) | [test-diff-0.2.13-vs-0.1.13.md](diff/source/test-diff-0.2.13-vs-0.1.13.md) · [中文](diff/source/test-diff-0.2.13-vs-0.1.13.zh.md) |
+
 > All module documentation is generated from snapshots of the `release` and `release-1.x` branches; the `main` and
 > `dev` working branches are out of scope.
 

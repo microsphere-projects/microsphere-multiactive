@@ -40,6 +40,15 @@
 | microsphere-multiactive-spring-boot  | [current](../current/user-guide/microsphere-multiactive-spring-boot.md) · [1.x](../1.x/user-guide/microsphere-multiactive-spring-boot.md) |
 | microsphere-multiactive-spring-cloud | [current](../current/user-guide/microsphere-multiactive-spring-cloud.md) · [1.x](../1.x/user-guide/microsphere-multiactive-spring-cloud.md) |
 
+## 源码对比
+
+对两条发布线最新 tag 之间逐模块的 `src/main` 与 `src/test` 内容对比（结论中已排除 Java 语言版本
+与 Java EE / Jakarta EE API 差异）：
+
+| Tag 对 | src/main（EN · 中文） | src/test（EN · 中文） |
+|----------|----------------------|----------------------|
+| 0.2.13 vs 0.1.13 | [main-diff-0.2.13-vs-0.1.13.md](../diff/source/main-diff-0.2.13-vs-0.1.13.md) · [中文](../diff/source/main-diff-0.2.13-vs-0.1.13.zh.md) | [test-diff-0.2.13-vs-0.1.13.md](../diff/source/test-diff-0.2.13-vs-0.1.13.md) · [中文](../diff/source/test-diff-0.2.13-vs-0.1.13.zh.md) |
+
 > 所有模块文档均基于 `release` 与 `release-1.x` 分支的快照生成；`main` 与 `dev` 工作分支不在分析范围内。
 
 ## English
